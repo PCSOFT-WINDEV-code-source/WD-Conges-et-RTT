@@ -1,0 +1,394 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : ProceduresGlobales
+ major_version : 28
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x113c69c5006e3efb
+ internal_properties : CAAAAAgAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  type_code : 31
+  p_codes : []
+  procedures :
+   -
+     name : nArrondi
+     procedure_id : 1241983892084178683
+     type_code : 15
+     code : |1+
+      Procédure nArrondi(pnValeur,pbValeursNégatives=vrai)
+      // on arrondi au 0.5 inférieur
+      
+      nValeurRetour est un reel
+      
+      // Partie entière
+      nValeurRetour = PartieEntière(pnValeur)
+      
+      si pnValeur>0 alors
+      	si PartieDécimale(pnValeur)>=0.5 alors
+      		nValeurRetour+=0.5
+      	fin
+      fin
+      
+      si pnValeur<0 alors
+      	si 0<PartieDécimale(pnValeur)<0.5 alors
+      		nValeurRetour+=0.5
+      	fin
+      fin
+      
+      // si on ne retourne pas les valeurs négatives
+      si pbValeursNégatives=faux _et_ nValeurRetour<0 alors
+      	nValeurRetour=0
+      FIN
+      
+      renvoyer nValeurRetour
+     type : 458752
+   -
+     name : sMois
+     procedure_id : 1241983892084244219
+     type_code : 15
+     code : |1+
+      Procédure sMois(pnNumMois,pnTaille=0)
+      
+      sMoisRetour est une chaine
+      
+      selon pnNumMois
+      	cas 1
+      		sMoisRetour = <§@3c7131bc5c191ce20000§>
+      	cas 2
+      		sMoisRetour = <§@3c7131bc5c191ce20001§>
+      	cas 3
+      		sMoisRetour = <§@3c7131bc5c191ce20002§>
+      	cas 4
+      		sMoisRetour = <§@3c7131bc5c191ce20003§>
+      	cas 5
+      		sMoisRetour = <§@3c7131bc5c191ce20004§>
+      	cas 6
+      		sMoisRetour = <§@3c7131bc5c191ce20005§>
+      	cas 7
+      		sMoisRetour = <§@3c7131bc5c191ce20006§>
+      	cas 8
+      		sMoisRetour = <§@3c7131bc5c191ce20007§>
+      	cas 9
+      		sMoisRetour = <§@3c7131bc5c191ce20008§>
+      	cas 10
+      		sMoisRetour = <§@3c7131bc5c191ce20009§>
+      	cas 11
+      		sMoisRetour = <§@3c7131bc5c191ce2000a§>
+      	cas 12
+      		sMoisRetour = <§@3c7131bc5c191ce2000b§>
+      FIN
+      
+      si pnTaille>0 alors
+      	si taille(sMoisRetour)>pnTaille alors
+      		sMoisRetour=gauche(sMoisRetour,pnTaille)+"."
+      	fin
+      FIN
+      
+      renvoyer sMoisRetour
+     type : 458752
+   -
+     name : AjoutePlage
+     procedure_id : 1241983892084309755
+     type_code : 15
+     code : |1+
+      Procédure AjoutePlage(NuméroItem, psDateDebut, pbDebutMidi, psDateFin, pbFinMidi, ...
+      		Valeur=0 , Libellé=DEMANDE.Observation, CouleurFond = iCyanClair, CouleurTrait = iNoir,...
+      		Image="", LibCourt="", IDTache="")
+      
+      DateDebut, DateFin sont des chaînes
+      sDateDebut, sDateFin sont des Dates
+      sDate est une Date
+      DebutMidi, FinMidi sont des booléen
+      sDateDebut=psDateDebut
+      sDateFin=psDateFin
+      DebutMidi=pbDebutMidi
+      FinMidi=pbFinMidi
+      
+      // Départ le soir
+      SI PAS pbDebutMidi ALORS
+      	// si la veille n'est pas un jour ouvré
+      	sDate=sDateDebut;sDate--
+      	SI PAS clJourFérié:bOuvré(sDate) ALORS
+      		// recherche du précédent jour ouvré
+      		sDate = clJourFérié:sPrécédentJourOuvré(sDate)
+      		// les congés commencent donc le jour suivant
+      		sDate++
+      		sDateDebut=sDate
+      	FIN
+      FIN
+      
+      // Retour le matin
+      SI PAS pbFinMidi ALORS
+      	// si le lendemain n'est pas un jour ouvré
+      	sDate=sDateFin;sDate++
+      	SI PAS clJourFérié:bOuvré(sDate) ALORS
+      		// recherche du prochain jour ouvré
+      		sDate = clJourFérié:sProchainJourOuvré(sDate)
+      		// les congés commencent donc le jour précédent
+      		sDate--
+      		sDateFin=sDate
+      	FIN
+      FIN
+      
+      DateDebut=sDateDebut
+      DateFin=sDateFin
+      
+      externe clPlanning
+      clPlanning:AjoutePlage(NuméroItem,sDateDebut, pbDebutMidi,sDateFin, pbFinMidi, Valeur,Libellé, CouleurFond,CouleurTrait,Image,LibCourt,IDTache)
+     type : 458752
+   -
+     name : nNombreJoursOuvrés
+     internal_properties : CAAAAAgAAACtw0PT5iBdKBNJRv58cN1lVFsvGsde03xJG9+pwM5UPDyjlc96I6x/yzjNClBsYGlY2ohxvXreYWbADBA9o5w3Oj9tgDd58dkd/+hz782sFwZge0kSoETHuDbWBC1+FPlk2uxmD8w3H1Sa7T+EOSav54K2TKN09TzCutAwEEv9orFx8Z81qVQTtVN/d8akRNg4PA==
+     procedure_id : 1241983892084375291
+     type_code : 15
+     code : |1+
+      PROCEDURE nNombreJoursOuvrés(psDate1, psDate2, psDépart, sRetour)
+      // Renvoie le nombre de jours ouvrables entre les 2 dates passées en paramètre
+      
+      nSomme est un reel // compteur du nombre de jours ouvrables
+      sDate est une Date
+      
+      sDate  = psDate1
+      
+      // la date1 doit être plus petite ou égale à la date2
+      SI psDate1 > psDate2 ALORS 
+      	// Erreur, on retourne 0
+      	RENVOYER 0	
+      FIN
+      
+      // Calcul du nombre de jours ouvrables entre ces deux dates
+      TANTQUE sDate <= psDate2
+      	// si c'est un jour ouvré
+      	SI clJourFerie:bouvre(sDate) ALORS
+      		nSomme++
+      		
+      		// si c'est le jour du départ
+      		SI sDate=psDate1 ALORS
+      			SELON Majuscule(psDépart)
+      				CAS CST_MATIN
+      					nSomme -=0
+      				CAS CST_MIDI
+      					nSomme -=0.5
+      				CAS CST_SOIR
+      					nSomme -=1
+      			FIN
+      		FIN
+      
+      		// si c'est le jour du retour
+      		SI sDate=psDate2 ALORS
+      			SELON Majuscule(sRetour)
+      				CAS CST_MATIN
+      					nSomme -=1
+      				CAS CST_MIDI
+      					nSomme -=0.5
+      				CAS CST_SOIR
+      					nSomme -=0
+      			FIN
+      		FIN
+      	FIN
+      
+      	// Jour suivant
+      	sDate..Jour++
+      FIN
+      
+      // renvoyer cette somme
+      RENVOYER nSomme
+     type : 458752
+   -
+     name : CreationSiVide
+     procedure_id : 1241983892084440827
+     type_code : 15
+     code : |1-
+      Procédure CreationSiVide()
+      // Initialisation des fichiers de données dans le cas de fichiers vides
+      
+      nAnnéeConges, nAnnéeRTT, nDernierMois sont des entiers
+      nNbCongés, nNbRTT sont des réels
+      
+      // Année courante et Dernier mois
+      nAnnéeConges = DateDuJour()[[1 a 4]]
+      nDernierMois = val(DateDuJour()[[5 a 6]]) - 1
+      //si nDernierMois=0 ALORS
+      //	nAnnéeConges--
+      //FIN
+      
+      nAnnéeRTT = nAnnéeConges
+      
+      // Nombre de jour de RTT et de congés par an
+      nNbCongés = Ouvre(FenNbJours,ChaîneConstruit(<§@3c7131bc5c191ce2000c§>,nAnnéeConges),25)
+      nNbRTT = Ouvre(FenNbJours,ChaîneConstruit(<§@3c7131bc5c191ce2000d§>,nAnnéeRTT),9)
+      
+      // à partir du mois de juin l'année des congés change
+      SI 5<=nDernierMois<12 ALORS 
+      	
+      	nAnnéeConges++
+      	
+      	ANNEE.Année = nAnnéeRTT
+      	annee.DernierMois = nDernierMois
+      	annee.NbJoursCongés = 0
+      	annee.NbJoursRTT = nNbRTT
+      	annee.ClotureCongés = vrai
+      	annee.ClotureRTT = faux
+      	hajoute(ANNEE)
+      	
+      	ANNEE.Année = nAnnéeConges
+      	annee.DernierMois = nDernierMois
+      	annee.NbJoursCongés = nNbCongés
+      	annee.NbJoursRTT = 0
+      	annee.ClotureCongés = faux
+      	annee.ClotureRTT = faux
+      	hajoute(ANNEE)
+      	
+      sinon
+      	ANNEE.Année = nAnnéeConges
+      	annee.DernierMois = nDernierMois
+      	annee.NbJoursCongés = nNbCongés
+      	annee.NbJoursRTT = nNbRTT
+      	annee.ClotureCongés = faux
+      	annee.ClotureRTT = faux
+      	hajoute(ANNEE)
+      FIN
+      
+      // Création d'au moins 1 collaborateur (avec droits=2)
+      si HNbEnr(COLLABORATEUR)=0 ALORS
+      	
+      	groupe.Nom=<§@3c7131bc5c191ce2000e§>
+      	groupe.Ordre=1
+      	hajoute(GROUPE)
+      	
+      	COLLABORATEUR.bActif=vrai
+      	COLLABORATEUR.IDGROUPE=groupe.IDGROUPE
+      	COLLABORATEUR.Droit=2
+      	COLLABORATEUR.Numéro=1
+      	COLLABORATEUR.Pseudo=<§@3c7131bc5c191ce2000f§>
+      	hajoute(COLLABORATEUR)
+      FIN
+      
+      // Création des congés et RTT
+      HLitPremier(COLLABORATEUR,Pseudo)
+      tantque pas HEnDehors()
+      	
+      	hraz(CONGES)
+      	conges.Année=nAnnéeConges
+      	conges.Pseudo=COLLABORATEUR.Pseudo
+      	hajoute(CONGES)
+      	
+      	hraz(rtt)
+      	rtt.Année=nAnnéeRTT
+      	rtt.Pseudo=COLLABORATEUR.Pseudo
+      	hajoute(rtt)
+      	
+      	HLitsuivant(COLLABORATEUR,Pseudo)	
+      FIN
+     type : 458752
+   -
+     name : TestFichierHFSQL
+     procedure_id : 1331461409630203574
+     type_code : 15
+     code : |1+
+      // Résumé : Teste l'ouverture des fichiers
+      // Syntaxe :
+      //TestFichierHFSQL ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      //
+      
+      PROCEDURE TestFichierHFSQL()
+      
+      // Positionne la vérification à l'identique
+      HVérifieStructure("*", hIdentique)
+      
+      QUAND EXCEPTION DANS
+      	// Teste l'ouverture de tous les fichiers
+      	HOuvre("*")
+      	HFerme("*")
+      	TestEcritRésultat(terInfo, "Fichiers OK")
+      FAIRE
+      	// Soucis en ouverture
+      	TestEcritRésultat(terErreur, "Fichiers en erreur : " + ExceptionInfo(errMessage))
+      FIN
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+resources :
+ string_res :
+  identifier : 0x3c7131bc5c191ce2
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+  strings :
+   -
+     text :
+      fr-FR : janvier
+     index : 0
+   -
+     text :
+      fr-FR : février
+     index : 1
+   -
+     text :
+      fr-FR : mars
+     index : 2
+   -
+     text :
+      fr-FR : avril
+     index : 3
+   -
+     text :
+      fr-FR : mai
+     index : 4
+   -
+     text :
+      fr-FR : juin
+     index : 5
+   -
+     text :
+      fr-FR : juillet
+     index : 6
+   -
+     text :
+      fr-FR : août
+     index : 7
+   -
+     text :
+      fr-FR : septembre
+     index : 8
+   -
+     text :
+      fr-FR : octobre
+     index : 9
+   -
+     text :
+      fr-FR : novembre
+     index : 10
+   -
+     text :
+      fr-FR : décembre
+     index : 11
+   -
+     text :
+      fr-FR : "Afin de créer les congés %1, vous devez saisir le nombre de jours de congés annuel auquel chaque collaborateur a droit."
+     index : 12
+   -
+     text :
+      fr-FR : "Afin de créer les RTT %1, vous devez saisir le nombre de jours de RTT annuel auquel chaque collaborateur a droit."
+     index : 13
+   -
+     text :
+      fr-FR : Direction
+     index : 14
+   -
+     text :
+      fr-FR : Directeur
+     index : 15
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ
+associated_test :
+ name : TEST_ProceduresGlobales.wxt

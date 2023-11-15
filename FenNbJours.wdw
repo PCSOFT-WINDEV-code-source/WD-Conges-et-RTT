@@ -1,0 +1,146 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : FenNbJours
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : FenNbJours
+ identifier : 0x3c71192b02282467
+ internal_properties : CAAAAAgAAACupZ1DpWIogBMxlLCKu0NgMtDpLohN761LpOKpviwQKJYH6rVf50yriRAfbq+d6I6LgNjhDly6ODN3H+9Nb1yVM4ibsvE0xomTGd7NZmFEow9qrPsJ7IMtKONkybw+nFEG8gKm16RwbLrv6j3Ntf0sLzNW3SMG9gMdq4rT+mKVitde6yfeZBtFTU87+x7WEW8k0Nf9U/aKA7P4/Foj5rvX90bxxesFzeFm7L/yCPKwNux9R0ENrIDxzYcHqPopAb4C3NKlWUOs3FXm+7HNzeuGJihoMV0oLuMZq39wew+1Y6WZT2GWGjlafCSjgIh8xg1U7CiA99tbKsJd04IfeWckKylsxIRclqofGS3VzlNMRek93uc1TqjAVjI8Sxn/BcUjEFsuY14HhWLmRs++hFk8TXWK6pk+UqjBwgGgYSfv4yOnt1qfaWmYs96k6AV6+VZqNkzYogaSkkwtxRgO2NscCto0UJBR6O+73fl7uYxjc8wd42RZMV4bz/LgoQtB0DkxWH4R8kQTUxa+78k78s3+k2zT4q8OwefmaCR2MFvHitc6+TJzOEWqjFxN0EOWUx3TuMDIwnGiy/uC/kLGvtNfrRK4Q417Eh8HdkKCYA+dwE/x19nCFi9cjhdf6FtwZ9hhhDmZGN7pKx3KRDHIhmniC9mYHMNt6muQOKq/loM2qDEiTo6XIShVR4DmDxvhYhAB+NgmYzQhzNHL9PYm8Ha8bwrCOoSzvwmbPX/v9N83XBU9q8Bq1mUIlHQV3s/v0PMJTwC2puULP+Xr+Y8KihUvnF01L2fHM5waibfwlkmTjtX9JezC3m87Nr7jwQKv8i3Fs7hCz9B/hJtReE5SiqGi
+ properties :
+  width : 363
+  height : 165
+  widthClient : 361
+  heightClient : 133
+ controls :
+  -
+    name : LIB
+    identifier : 0x3c71192b71592486
+    internal_properties : CAAAAAgAAACtPw39RztzeVy1hIYMPJQYxNE/5Wr5OEbjZez0XZIrsxU6A5Q3MnXeSE03+ZUMaHRliEtj4wXXZDh0QNcrpe5+X4AT+9eo0NzCjZYWDso/Kno86zgh58lwcx6z/KCPg84S42v/Ul9Ij2eirXN3RJnpFpEjUuDE6XGj+WxiZzz7auboHp/fWkou1BsCXv/JknrEWzIHKPQsHUMeTLchjzTZzhX8bOISDI9psSxGdKp+5ahjh0V0zH+OlbyZI9NIX1Z+xj3mD7A2PXpClZKBaW6V1uVsKFxkQKejNRoHqsYWcgpP4MM5xTfLsl45/uDuX+o0XuIKyleIFvj37HYf3pCTkKOhzYfVMfFX4pb6laaPmFPm77HeqddC5til7dXZA4SYgU/tMr8dpPpHW5gE1TDgTOc1bJqdd3yjStSxVfyr0k0PZVBb5frR6DTINGlR21THmmvg08akkDGzCn8Gg/jhwqwWe/ughkiTqkRC0XJmZcjNBqQ5cDVRx4aSLp2hTZS8BSW3h5Px1KZdT4JmXRksrug5FWd8W/eRMnT6NOkQkZDn/VYp95dsPZ1mHyFEgmzwYORJpgUObAmEEWCxNl+Q+ORU5pX4GuztuALJJtqbmsrl2jwH8nwFDSt11s+C6eTNQo4=
+    properties :
+     x : 6
+     y : 6
+     width : 338
+     height : 49
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : SAIS_JOURS
+    identifier : 0x3c71192b2f692486
+    internal_properties : CAAAAAgAAAAZ3tRr4mcdo3jhhcsERVfXriUK6eLZaQbajioN5F1gUHHLQM+VGQREfEiyztEnKDuJQL8zDH6WwKzsWjbHgrZ0Qn6HWfIejXw6kwMPQu83bpD3jB5PzJhhM6UMdevuEONTD/F2sGjxWbIJ/a2VywNybh9NQozJ9vjva/fqgSHddAfMOffSULc8M1Yt8xO5iyveixcw6Lo79e9o/go3VPbHqb2mx5ItlfKadXkzHvA9LONZOahlsvCu0PdzIv/bm0jaSUYpENId9yPjPoUITgYFCRDVprp8VFRwBP73HyuGM0qtMydKMBbgfv4W+hzZLkYQgtK2Bt9oErD0sZriHKaHQJcRVvIXuL9Z/PX2Gp6xkkvLi8G5DqA+vLf3z4y6PYtXmRUSA2H6LacG9GrjfvgoD7aBIhW0MwbA4Kx6QBrV57eWWc9D/0v4jqhc863hCZSg24g2ElCa/EMBOlFwzNFYIJ/xsJQllC/WocKA3sQ6Mh6RXh2dwVqdHVe996ddnsavTnt2OrTSfchCDu6vYayXnMWub/bz3LaKts/gk+XNejdac5W3Qdf4rQqTQ8T+QpWCBACsqz0nXP2XOkfQCRvoLWhZLCc2KuFUlFsFpQtswHss4Rpw8YS3jkWJrbCAItyxK1oWXGdrxJBN7fItZ3uk5MIXekWid3EbL0Z5HknaoFXDdVRT8IoNAjbhTTgI7ZKLWPvq8y3gPp5Ay2G4a4MBwpWArJ7XJrXKsrXpT+OUv4aA0plPCou59muwJ7w+0Ld/n98kVomQLtZ2PQ3/7RExfzvKXePWrf5n1N6nC5B4+H5HIY3fVDtzaLpxQej2cWUD2QpZT78ZMBTjUulnS1xOCzEWy9UiP36320MlAx3nsYvLl23WkR8cXpNuzCnF1t8y69LVUbZ1r7fmmCFx1GGL5aKzOzoUKloxDG1qAxkfB4z+iGRoiGMsNd+/KqtK2ED9BISHbj+wesjlbm/Ipi26eDnliwD3JSU1FeNcdo6sGox5oKW0+OAWzFMjnv0cCgO2nPaC4fhxGaaB4WhbguPy6tD3Kj7mejr9TfHs5jBERVzQXIbpUWrNrpeTAnLIVN+5XFPpzrFTP8Xjzsft3kgXMf3BwhW07oqdsk0yoZCMnXZjmEAkwFN5I29gVGhyupvXZCJmiWJ2VF8QGA==
+    properties :
+     x : 6
+     y : 61
+     width : 165
+     height : 25
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+  -
+    name : OK
+    identifier : 0x3c71192b271d2486
+    internal_properties : CAAAAAgAAABKXI0myXgHJh0x7AN7VAmh7y8cnunwbtod9i7unGvJiVxNKqUjkxBq6T5/34h7YeqH+qKSCYFz5sD832ojcNoquurBc4dhCUG4h4CKlWvTg65HbzwSD3DHHDTBGKt5KaJTeRgFk6obZ3J0wBq73RCVMG0gezvT2ITfoYMRtG4LrcLuJcSkV3jt2nO7fNqg4UdK2nTXlnJyDIXocaVsoU8SW7d2EMz2a1e+07w1Z3+HyjCqBiW0dHUwrrFJj5EZhf8Il53dVLba/1PR/93BukhbJsXTi3cgSIFlYkDn5fDFFF3yQZ1H31O+LKN5o3qO82nKsXEdLt9jX9ihTOdQd4aLTztSPol3J5kkgrIdYoKODcO2t75Z/D0X7s2PnPPYXtCXrdtTNCFMmZGrJhbqVmm9Ng6rCdhp/dcHckY6pUrdVh84+D4dH5pykyK8C2Rxr7y17TdtKcQVsjMGRHvc5ZxFwfDgA/+r6TF7lD/PJGBw4pxcWiYdxxWaVuU57eDgUJj56LyD/0vZyxGC0FRYfRcV1x/LFVdl54Np79l1UGU5uuSzc6J5mkhfpwZEgK0w6rtGTlCJvaG/a4+0/tJ81OyQl8uZOkLw7lrGrIU7QVEyjnzhRE8mhp5irVBPy9bDU+BQ3ck6uNNl5xuRl/faJ/ID8wLAZf5TDTHknulwCeTYmid2qqCCM7Pc5E/rrkWrlitl6MbDPAjjTOb1CrSQH3qY379obvcKcLJ2E2oLY/ZrNp1EMMJYcClJnu2wXlwXU77MbgJoEoF5MXHphwFcaabxoVPfC0CCYTGPqyXETnpAUd1N/QWE5mQEKaH489XeNjiKSk/wMF6KVdCoBfvGv/kla0R5y2z3cIxNliO0qvF4DYqH+PG3pCu0f9m9mzFBl8z4HKCAdtB5uXfoUefzpVzYQ83lo8Gw2q39C4crUpQquVnZ
+    properties :
+     x : 101
+     y : 102
+     width : 75
+     height : 23
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         si SAIS_JOURS<=0 alors
+         	info(<§$0000§>)
+         	RepriseSaisie(SAIS_JOURS)
+         FIN
+         ferme("",SAIS_JOURS)
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_ANNULER
+    identifier : 0x3c713e657cf98eb8
+    internal_properties : CAAAAAgAAAC4LaSyIIh1pM7la3IM/L/nh1mLt96cAv1oBankVGzPSJav0YlgnpYXxHx8c1qNuGEEuo53PSokgiwafHXrALLcCZL6TKhxCmrrMcYFI2Du2DbubPybt+x/ay3NYC0KtqkUC8MNgU1hjuLZ3K6HwMFs6dnnljAwe+W8dmRjQDXXBt5Jo3rS1XRoEpJbv3aNehypLMCTUG+cV51fiBIj7CAa/4VudA08qIab5rX7muTt7l7vFsZcK/65C+lqb5k9zFStTcygStZ6SSxphlHHRwO462Es2COasLjziNsmuX1u1ao7ClkUg41GMOcetDMcOygPpzpxmmq/3v2p6PmWayvdcyHvNiD8nbbFFDaEI4MulrV6ChU77BlMhnDxuH/uzL8MErjNbbYZNG665s0h4frhgmSW/EORZivzeAL5WhmYvLVT1RJCHof+k+kW8wuCmHdQGkFpMD/tJJJZif4Ano7CdyEo1INq1FaQaVz/y/6/NQ8dXcdSv4aXeUa7TfZueKu2ZmurBniHV16q5AOSEvlqYQY3TvkPtJDhYzc0Txj2CD7FXqE49wY10qvbDXYrdInRoeMCkAKzYY5t0Vu1v96g7Ky65fV50iSF+8yY2DZqs0gsn1kw/k+i2H4ie1zwsgh+pfk8I45HUFH7elsPpeB6Q8EaFAjUzhC1l2kpA/MUTgP7heJy9Jw5DE5TzNEfwzXJl1HfLI0sPNOIY4S0pN2PbJOS4dgUcZJIM+Aw7lGi2up2P0wHH3MEULUT/9disAMaLUBVNsy07fS6lq3zmMaX8p1F4AJx+I8KH9KD1ps087FGKa7TF0KCZMgbG2vj6A8GuICtyZlsrNxKSKxbj8E82/JUvjCKvvPOaBo1uITZMRNV5qisS4W65HFSvO0EgGB8NpPnw6HQJ7hAxw+IOPa+0VwKemCU+2/Dd78luR6SWrH9KIjtTQjxVnTRAehd8+210CspxtLn63rS
+    properties :
+     x : 182
+     y : 102
+     width : 75
+     height : 23
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         ferme("",0)
+        type : 18
+      -
+        type : 161
+        enabled : false
+ menu :
+  name : _Menu
+  identifier : 0x3c71192b7c722476
+  internal_properties : CAAAAAgAAADAfZ27Q+jJ/MBXHLGCb7PyE2Yqjvuo9mAX2ZN+LLuyQtzms1431znXR0sNCCeLESXZp1gqmo+m2mUhb2ELR2phZ8VOgUSyXddfQyxpxffipvH/iiFuFkCLgpjx1Ah9/9/ndeRpWb0s9Qcjy8oPtW3aMcRtuglgDe5Ch9/jnC/Drp19/hhf+qz96diLw5T0yWlzg33c/E8hhMwUBdSOV69/8iDQGLfTvLoTvV3YkiQ5Dce7dxB2gUx1AVvVTykQMm7G+0haIOV568KMGgPEJluRN2XjgQ11Tb8vVxt6P2g=
+  options : []
+ languages :
+  - fr-FR
+ popup_menus : []
+ message_bar :
+  internal_properties : CAAAAAgAAAAkRzzKLNpyg8Fz6/wPABXQixKX5MlobJVA/SDO0IcUIoNZEVyk9jIEN2NEmFa7a5+FUt7usE62dlRirqd9EPfsjjv/0WlYBQWqIgp2aHiiKSDJ7CYy5oHmKijxlLegDxw=
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1-
+      procedure FenNbJours(psTexte="",pnNbJours=0)
+      lib=pstexte
+      SAIS_JOURS=pnNbJours
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     type : 11
+   -
+     type : 12
+   -
+     type : 17
+   -
+     type : 13
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+resources :
+ string_res :
+  identifier : 0x3c713e6f03ccb57a
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+  strings :
+   -
+     text :
+      fr-FR : Vous devez saisir le nombre de jours de congés.
+     index : 0
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

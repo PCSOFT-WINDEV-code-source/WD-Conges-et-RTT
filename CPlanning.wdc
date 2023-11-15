@@ -1,0 +1,1250 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : CPlanning
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x3b24cfe27e2cacd7
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  internal_properties : CAAAAAgAAABm4PVFe9JAHaoZ7pWrapr167xJBrSdz0axAnnnfYhOQaaZf6aFmw+87+hdnze0968KI3y7g0wMbri74fT3L3UE/39pGg==
+  type_code : 10
+  p_codes :
+   -
+     internal_properties : CAAAAAgAAACxRgrfeXfoj+qyT3zuTpCbklZQVoE11pJHzKKIBHM337yhFW3K+d/bNOv8wfPmde7Dhw3Lpu+MH0KHi8hJfXvOEHzqQH8UUmAo6Uc6Ku5BGPYbvgbIFHL9UNmoUHQ6Jf8ItJMn6awg1x5QeDMOH7k3IkGnIUxZYtvMBX/GgS0+PQ==
+     code : |1+
+      stItem est une structure
+      	TEXTEIT est une chaine			// Texte affiché dans la marge
+      	VALEURIT est une chaine 		// Valeur à la charge de l'utilisateur de la classe (ID Personne par exemple)
+      	LIBELLEIT est une chaine		// Libellé affiché en survol de l'item
+      	COULEURIT est un entier  		// Couleur d'affichage
+      FIN
+      stPlage est une structure
+      	NUMEROIT est un entier				// Numéro de l'Item associé
+      	DATEDEB est une chaine sur 8		// Date de Début AAAAMMJJ
+      	DEBUTMIDI est un entier			// Débute à Midi
+      	DATEFIN est une chaine sur 8		// Date de Fin   AAAAMMJJ
+      	FINMIDI est un entier 				// Fini à Midi
+      	VALEURPL est une chaine			// Valeur à la charge de l'utilisateur de la classe (ID Plage par exemple)
+      	LIBELLEPL est une chaine			// Libellé affiché en survol
+      	COULEURFPL est un entier  			// CouleurFond
+      	COULEURTPL est un entier  			// CouleurTrait
+      	IMAGE est une chaine				// Image affichée dans la plage
+      	LIBCOURT est une chaine			// Libellé court affiché dans la plage
+      	IDTACHE est une chaine				// ID de tâche pour lier les tâches contigües entre elles 
+      FIN
+      
+      CPlanning est une Classe
+          TItem est un tableau de stItem		// Tableau des items
+      	TPlage est un tableau de stPlage     // Tableau des plages
+      	
+      	NomFenetre est une chaîne			// Nom de la fenêtre contenant le planning
+      	NomChampImage est une chaîne		// Nom du champ image où le planning est dessiné
+      	NomChampBulle est une chaîne		// Champ libellé pour la bulle de survol
+      	NomChampAscenseur est une chaîne	// Champ ascenseur pour le scrolling vertical
+      	
+      	// Dates
+      	DateCourante est un entier  		// Date affichée en 1ère colonne
+      	DateDebut est un entier  			// Date la plus ancienne affichable
+      	DateFin est un entier  			// Date la plus récente affichable
+      
+      	// Items
+      	ItemCourant est un entier			// 1er item affiché
+      
+      	// Polices de caractères (Nom, hauteur et attributs)
+      	// Pour les jours
+      	NomPoliceJour est une chaîne
+      	HauteurPoliceJour est un entier
+      	AttrPoliceJour est un entier
+      	// Pour les items
+      	NomPoliceItem est une chaîne
+      	HauteurPoliceItem est un entier
+      	AttrPoliceItem est un entier
+      	
+      	// Marges
+      	MargeEnteteX est un entier			// Espace à gauche des jours et des mois
+      	MargeEnteteY est un entier			// Espace en haut des mois
+      	MargeItemY est un entier			// Espace en haut des items
+      
+      	// Couleurs
+      	CoulFond est un entier  			// Couleur de fond
+      	CoulFondEntete est un entier  		// Couleur de fond de l'entête
+      	CoulFondMarge est un entier  		// Couleur de fond de la marge
+      	CoulCadres est un entier  			// tous les cadres
+      	CoulMidi est un entier  			// Séparation demi journée
+      	CoulMois est un entier  			// Couleur du nom du jour (Lundi, mardi)
+      	CoulNumJour est un entier  			// Couleur du n° de jour (1, 2)
+      
+      	// Internes à la classe
+      	NombreColonnes est un entier		// Nombre de colonnes affichables (marge de gauche exclus)
+      	NombreLignes est un entier			// Nombre de lignes affichables sur une page écran (entête exclus)
+      	LargeurMarge est un entier			// Largeur de la marge de gauche en pixels
+      	HauteurEntête est un entier			// Hauteur de l'entête en pixels
+      	AfficheMidi est un booleen			// Affiche la séparation de demi journée
+      	HauteurLigne est un entier			// Hauteur d'une ligne
+      	LargeurColonne est un entier		// Largeur d'une colonne
+      	HauteurChamp est un entier			// Hauteur du champ image
+      	LargeurChamp est un entier			// Largeur du champ image
+      	PositionJours est un entier			// Position verticale des jours dans l'entête
+      	TimerSurvol est un entier
+      	
+      	// Déclaration d'un pointeur sur l'objet planning 
+      	// pour les méthodes appelées par Timer ou événement
+      	GLOBAL
+      	pObjet est un objet dynamique
+      
+      Fin
+      
+      
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 4261759718564998359
+     type_code : 27
+     code : |1+
+      procedure CPlanning::constructeur(_NomFenetre,_NomChampImage,_NomChampBulle,_NomChampAscenseur)
+      
+      // _NomFenetre = chaîne de caractères, fenêtre qui contient le planning
+      // _NomChampImage = chaîne de caractères, nom du champ image destination
+      // _NomChampAscenseur = chaîne de caractères, nom du champ ascenseur pour le scrolling vertical
+      
+      // Pointeur sur l'objet nécessaire pour le Timer de survol
+      ::pObjet = objet
+      
+      // Noms des champs et de la fenêtre utilisés
+      :NomFenetre = _NomFenetre
+      :NomChampImage = _NomChampImage
+      :NomChampBulle = _NomChampBulle
+      :NomChampAscenseur = _NomChampAscenseur
+      
+      // Paramètres par défaut = Mois en cours
+      :ChDateDebut() ; :ChDateFin()
+      :NombreColonnes=:DateFin-:DateDebut+1
+      :DateCourante=:DateDebut
+      
+      :NombreLignes = partieentiere({:NomChampImage,indChamp}..hauteur/20)
+      :ItemCourant = 1
+      :LargeurMarge = 127//80
+      :HauteurEntete = 50
+      :CoulFond = itransparent
+      :CoulFondEntete = itransparent
+      :CoulFondMarge = itransparent
+      :CoulCadres = ibleufonce
+      :CoulMidi = igrisfonce
+      :CoulMois = ibleufonce
+      :CoulNumJour = ibleufonce
+      :AfficheMidi = vrai
+      
+      // Ajustements par défaut
+      :MargeEnteteX = 2
+      :MargeEnteteY = 2
+      :MargeItemY = 2
+      
+      // Polices par défaut
+      // Dates
+      :NomPoliceJour = "ARIAL"
+      :HauteurPoliceJour = "7"
+      :AttrPoliceJour = 0
+      // Items
+      :NomPoliceItem = "ARIAL"
+      :HauteurPoliceItem = "7"
+      :AttrPoliceItem = 0
+      
+      // On amorce le champ
+      ddebutdessin(:NomChampImage)
+      
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 4261759717150600407
+     type_code : 28
+     code : |1+
+      procedure CPlanning::Destructeur()
+      
+      // Fin de dessin
+      dfindessin()
+      
+      //Arrêt du Timer
+      fintimer(:TimerSurvol)
+      
+     type : 655360
+   -
+     name : AjouteItem
+     internal_properties : CAAAAAgAAACryVnG/G2xN5pofF6M4RxdyQTvSd8+7g4l3dvpLjyEFCzxBddcVYIRP3phzhJOjK2MZMQ9d2RcF1IyuGRn7cynwqXZzIkj/9cxdmn60Px9flfrTHj7t+3GPYVv66al7ZixAaExPJ9U6s01ojo5dO8+1DErtzCvimu3qRkyZk14QZtKgld6FG+Mb6htobOnRt4+Og==
+     procedure_id : 4261759717096729875
+     type_code : 12
+     code : |1+
+      fonction CPlanning::AjouteItem(Texte, Valeur, Libelle, Couleur = inoir)
+      // Ajoute une ligne au planning
+      
+      // On ajoute un élément au tableau
+      
+      i est un entier   = dimension(:TItem)+1
+      dimension(:TItem,i)
+      
+      :TItem[i]:TEXTEIT=Texte			// Texte affiché dans la marge
+      :TItem[i]:VALEURIT=Valeur		// Valeur à la charge de l'utilisateur, par exemple un n° d'enreg
+      :TItem[i]:LIBELLEIT=Libelle		// Libellé affiché dans la bulle
+      :TItem[i]:COULEURIT=Couleur		// Couleur d'affichage dans la marge
+      
+      // Gestion de l'ascenseur
+      
+      nPos est un entier   = {:NomChampAscenseur,indChamp}..valeur
+      {:NomChampAscenseur,indChamp}..BorneMax=i
+      
+      si nPos>i alors nPos=i
+      {:NomChampAscenseur,indChamp}..valeur=nPos
+      
+      // Renvoie le numéro attribué
+      renvoyer i
+      
+     type : 458752
+   -
+     name : AjoutePlage
+     internal_properties : CAAAAAgAAAClO0vfdrc71aZmmLqqP+gBxXLnQcVMQCSZS695oL6EPCzDlV/aI3wf6/hNqoAsIHnYytjxzeqesXYQHKBdE6wXKt+NkBe5gbk9txBL96XUD244owF6OOzfgE6+XFUW/NFM0pS+t6Q/93ySdXfssa4HT1r+ZItMXZRqEvDTVV5zRpZDxaQtGaqJTtUQqlowPNAwNA==
+     procedure_id : 4261759718928788755
+     type_code : 12
+     code : |1+
+      fonction CPlanning::AjoutePlage(NuméroItem, DateDebutPlanning, DebutMidi, DateFinPlanning, FinMidi, ...
+      					Valeur, Libellé, CouleurFond = icyanclair, CouleurTrait = inoir,...
+      					Image="", LibCourt="", IDTache="")
+      // Ajoute une plage au planning
+      
+      //	NuméroItem = n° de l'élément associé
+      //	DateDebut = Date de début de période
+      //	DebutMidi = 1 si la période débute à midi sinon débute dès le matin
+      // 	DateFin = Date de fin de période
+      //	FinMidi = 1 si la période finit à midi sinon fini le soir
+      //	Valeur = Valeur gérée par l'utilisateur de l'objet (ex : un numéro d'enreg)
+      //	Libellé = Libellé affiché lors du survol de la plage
+      //	CouleurFond = couleur de fond la flèche)	
+      //	CouleurTrait = couleur de contour la flèche)	
+      //  Image = image affichée sur la barre
+      //	LibCourt = libellé court écrit sur la barre
+      //  IDTache = ID pour tâches liées
+      
+      // L'item associé n'existe pas
+      si :TItem[NuméroItem]:TEXTEIT~= "" alors
+      	si enmodetest() alors erreur(ChaîneConstruit(<§$0001§>,NuméroItem))
+      	renvoyer faux
+      fin
+      
+      // Les dates sont invalides
+      si dateversentier(DateDebutPlanning) > dateversentier(DateFinPlanning) alors
+      	si enmodetest() alors erreur(<§$0002§>)
+      	renvoyer faux
+      fin
+      
+      // On ajoute une plage au tableau
+      i est un entier   = Dimension(:TPlage)+1
+      Dimension(:TPlage,i)
+      :TPlage[i]:NUMEROIT = NuméroItem				//	NuméroItem
+      :TPlage[i]:DATEDEB = DateDebutPlanning			//	DateDebut
+      :TPlage[i]:DEBUTMIDI = DebutMidi					//	DebutMidi
+      :TPlage[i]:DATEFIN = DateFinPlanning				// 	DateFin
+      :TPlage[i]:FINMIDI = FinMidi						//	FinMidi
+      :TPlage[i]:VALEURPL = Valeur						//	Valeur
+      :TPlage[i]:LIBELLEPL = Libellé						//	Libellé
+      :TPlage[i]:COULEURFPL = CouleurFond				//	CouleurFond
+      :TPlage[i]:COULEURTPL = CouleurTrait				//	CouleurTrait
+      :TPlage[i]:IMAGE = Image							//  Image
+      :TPlage[i]:LIBCOURT = LibCourt					//	Libellé court
+      :TPlage[i]:IDTACHE = IDTache						//  ID pour tâches liées
+      
+      renvoyer vrai
+      
+     type : 458752
+   -
+     name : bPlageContigue
+     internal_properties : CAAAAAgAAAC9MYdx1rippyochKaA5Zi5YdB3QdMCak79eavRqtDomHTl9RcQ4WYZN5bZHkY6oDGMuDw9G3CYR8qewNzb6WjzEoFxLJUH2885oJeUXi5LiJ39+rqh0dN44+clNZz/E+p/8/frmrEi9FufIIxfPp3AUnPpiVZ5sK31k7cUrPfWc5kEAPnYrkUOzSILR46Mbs4oLA==
+     procedure_id : 4261759717387316529
+     type_code : 12
+     code : |1+
+      Procédure CPlanning::bPlageContigue(nPlageAvant, nPlageAprès)
+      
+      // Teste si 2 plages sont contiguës et correspondent à la même tâche
+      // pour les lier entre elles
+      
+      // Les plages existent ?
+      si nPlageAvant=0 ou nPlageAprès=0 alors renvoyer faux
+      si nPlageAvant>dimension(:TPlage) ou nPlageAprès>dimension(:TPlage) alors renvoyer faux
+      
+      // C'est la même tâche ?
+      si pas :TPlage[nPlageAvant]:IDTACHE = :TPlage[nPlageAprès]:IDTACHE alors renvoyer faux
+      
+      // Dates valides ?
+      si pas datevalide(:TPlage[nPlageAvant]:DATEFIN) alors renvoyer faux
+      si pas datevalide(:TPlage[nPlageAprès]:DATEDEB) alors renvoyer faux
+      
+      // Plages contigües ? (Différence entre les 2 dates = 1 maxi)
+      si abs(datedifférence(:TPlage[nPlageAvant]:DATEDEB,:TPlage[nPlageAprès]:DATEFIN))<=1 alors renvoyer vrai
+      
+      renvoyer faux
+      
+     type : 458752
+   -
+     name : ChargeProprietes
+     procedure_id : 4261759718682111291
+     type_code : 12
+     code : |1+
+      procedure CPlanning::ChargeProprietes(NomFichier)
+      
+      // Permet de relire les propriétés sauvegardées par SauveProprietes
+      // NomFichier est le fichier qui a été utilisé avec SauveProprietes
+      
+      :AfficheMidi = val(inilit("PROPRIETES","AfficheMidi","1",NomFichier))
+      :CoulFond = val(inilit("PROPRIETES","CoulFond",NumeriqueVersChaine(iblanc),NomFichier))
+      :CoulFondEntete = val(inilit("PROPRIETES","CoulFondEntete",NumeriqueVersChaine(iblanc),NomFichier))
+      :CoulFondMarge = val(inilit("PROPRIETES","CoulFondMarge",NumeriqueVersChaine(iblanc),NomFichier))
+      :CoulCadres = val(inilit("PROPRIETES","CoulCadres",NumeriqueVersChaine(inoir),NomFichier))
+      :CoulMidi = val(inilit("PROPRIETES","CoulMidi",NumeriqueVersChaine(inoir),NomFichier))
+      :CoulMois = val(inilit("PROPRIETES","CoulMois",NumeriqueVersChaine(inoir),NomFichier))
+      :CoulNumJour = val(inilit("PROPRIETES","CoulNumJour",NumeriqueVersChaine(inoir),NomFichier))
+      :LargeurMarge = val(inilit("PROPRIETES","LargeurMarge","20",NomFichier))
+      :HauteurEntete = val(inilit("PROPRIETES","HauteurEntete","20",NomFichier))
+      :NombreColonnes = val(inilit("PROPRIETES","NombreColonnes","20",NomFichier))
+      :NombreLignes = val(inilit("PROPRIETES","NombreLignes","20",NomFichier))
+      :MargeEnteteX = val(inilit("PROPRIETES","MargeEnteteX","0",NomFichier))
+      :MargeEnteteY = val(inilit("PROPRIETES","MargeEnteteY","0",NomFichier))
+      
+     type : 458752
+   -
+     name : ChDateCourante
+     internal_properties : CAAAAAgAAABTUXGqHF0F1xoIPN7s4Rz9aURPKf8ebi6lfRupTryEtEyx5bf89cJx/xphznIOzA0spGTd10Rcd9KSuKRH7UxH4mX57OnD//cxJjkqIGyNbudbXOiLJz02TbW/W/aVfQjBcTEhTM9kmt0lsiqJ5H8uJOF75wCfWttHGSkitv1I8Ss6kscKhD98/xh93f/77gbGQg==
+     procedure_id : 4261759717437189455
+     type_code : 12
+     code : |1+
+      procedure CPlanning::ChDateCourante(NewParam)
+      
+      // Modifie la date courante, 1ère colonne du planning
+      // NewParam = Nouvelle date au format AAAAMMJJ
+      
+      
+      lNouvelleDate est un entier   = dateversentier(NewParam)
+      // La date est supérieure à ce qui est autorisé, on plafonne
+      si lNouvelleDate > (:DateFin-:NombreColonnes)+1 alors
+      	bip
+      	:DateCourante = :DateFin-:NombreColonnes
+      	retour
+      fin
+      // La date est inférieure à ce qui est autorisé, on rectifie
+      si lNouvelleDate < :DateDebut alors
+      	bip
+      	:DateCourante = :DateDebut
+      	retour
+      fin
+      :DateCourante = lNouvelleDate
+      
+     type : 458752
+   -
+     name : ChDateDebut
+     procedure_id : 4261759717048298841
+     type_code : 12
+     code : |1+
+      procedure CPlanning::ChDateDebut(NewParam="")
+      
+      // Plus petite date affichable
+      // NewParam = Nouvelle date au format AAAAMMJJ
+      
+      // Valeur par défaut = aujourd'hui
+      si NewParam="" alors NewParam=DateDuJour()
+      :DateDebut = dateversentier(NewParam)
+      
+     type : 458752
+   -
+     name : ChDateFin
+     procedure_id : 4261759718127545689
+     type_code : 12
+     code : |1+
+      procedure CPlanning::ChDateFin(NewParam="")
+      
+      // Plus grande date affichable
+      // NewParam = Nouvelle date au format AAAAMMJJ
+      
+      si NewParam="" alors
+      	NewParam = EntierVersDate(:DateDebut+365)
+      fin
+      
+      :DateFin = dateversentier(NewParam)
+      
+     type : 458752
+   -
+     name : ChItemCourant
+     internal_properties : CAAAAAgAAABjAQGazHntXxoAjMZ0iRyVaUR/Gf9GBr79nbNJjuy8JKRpfT/0hVIpP5KhtsoGzGXMFGRd15zkN5pyUMS3DTTXWk3BFKHTj18x6mX+TGAZgpP/mKzHK6lK2QnbPwJpKewthR01OJPgbvn5Tp6l+NvSgGWXW4wD5s/znQUG0sGUVfd+bgu2yAsgyywJyY/r/hb2cg==
+     procedure_id : 4261759717093256547
+     type_code : 12
+     code : |1+
+      procedure CPlanning::ChItemCourant(NewParam)
+      
+      // fixe le premier élément à afficher dans le planning
+      // NewParam = nouvelle 1ère ligne affichée
+      
+      // L'élément demandé existe bien ?
+      si NewParam > dimension(:TItem) ou NewParam < 1
+      	bip
+      	retour
+      fin
+      :ItemCourant = NewParam
+      
+     type : 458752
+   -
+     name : EstBissextile
+     procedure_id : 4261759717426965889
+     type_code : 12
+     code : |1+
+      fonction CPlanning::EstBissextile()
+      // Renvoie vrai si l'année courante est bissextile
+      
+      sAnnee est une chaîne = gauche(entierversdate(:DateCourante),4)
+      renvoyer datevalide(sAnnee+"0229")
+      
+     type : 458752
+   -
+     name : Imprime
+     internal_properties : CAAAAAgAAADVy/s77muzdeammJpaP+iRRWJXIdU8APRJe1+pIA6UXJxjda+aA6yfS9gNyrBs4En42iiRnZpeAaYgTBAd41xXmv9N4FcZMXndj1gDX10cp3bw61kCsPTXKMZG1B1OxMkUKhy2v1znL4RqHc/0iVZ/l1LmnFOEpUzySphrfTYbHv47zZw1EZKBFu1YSu58bIBAxA==
+     procedure_id : 4261759718579088769
+     type_code : 12
+     code : |1+
+      Procédure CPlanning::Imprime()
+      
+      // On affiche le planning page par page et on imprime
+      
+      // Sauvegarde de la position de l'ascenseur
+      
+      nPos est un entier = {:NomChampAscenseur,indchamp}
+      
+      // Orientation du papier
+      iParamètre("DEFAUT=NON") ; iParamètre("ORIENTATION=PAYSAGE")
+      
+      // Nb de pages nécessaires
+      nPages est un entier = {:NomChampAscenseur,indChamp}..BorneMax/:NombreLignes
+      si modulo({:NomChampAscenseur,indChamp}..BorneMax,:NombreLignes)>0 alors nPages++
+      
+      // Affichage des pages et édition
+      {:NomChampAscenseur,indChamp}=1
+      sTitre est une chaîne = ChaîneConstruit(<§$0004§>, DateVersChaine(EntierVersDate(:DateDebut)), DateVersChaine(EntierVersDate(:DateFin)))
+      
+      iCreePolice(1,12,iGras+iSouligne,idefaut,iNoir,0)	// Pour titre
+      iCreePolice(2,10,iGras+iItalique,iSwiss,idefaut,0)		// Pour n°s de page
+      
+      nPageEnCours est un entier
+      pour nPageEnCours=1 à nPages
+      	:TracePlanning(vrai)
+      	// Impression de la page en cours
+      	dsauveimagebmp(:NomChampImage,fRepEnCours()+"\IMP_IMG.BMP")	// Sauvegarde de la page en BMP
+      	multitache(100)	// Temporisation le temps que le fichier BMP soit créé sur disque
+      	// Titre
+      	iposy(5) ; iImprime(ipolice(1)+sTitre)
+      	// Planning
+      	iImprimeImage(fRepEnCours()+"\IMP_IMG.BMP",5,15,iLargeurPage()-5,ihauteurpage()-10,0) // Impression de l'image
+      	// Bas de page
+      	iposy(ihauteurpage()-5) ; iposx(iLargeurPage()-5-ilargeurtexte(ipolice(2)+ChaîneConstruit(<§$0000§>, nPageEnCours, nPages)))
+      	iImprime(ipolice(2) + ChaîneConstruit(<§$0000§>, nPageEnCours, nPages))
+      	// Saut de page
+      	si nPageEnCours<nPages alors isautepage()
+      	// Suite
+      	{:NomChampAscenseur,indChamp}+=:NombreLignes
+      FIN
+      
+      // Edition terminée
+      iFinImprime() ; fsupprime(fRepEnCours()+"\IMP_IMG.BMP")
+      
+      // Restauration de la position de l'ascenseur et de l'affichage initial
+      {:NomChampAscenseur,indChamp}=nPos ; :TracePlanning(vrai)
+     type : 458752
+   -
+     name : InfoZone
+     internal_properties : CAAAAAgAAACzMVHK3ElF/3ogbEZkaRxl6VSvmY+2Js5t7QMZjhwspBSp/S+URcKJf9LBdnomLDUshNR9Rywkp8pi4FS3/eT3Cs3hZMETP78Rsr2mBIjxiuunMHT/8+EScXGTR3rxIbRlrTWd0DuYljHBJoZdIDOa+O3PI8TLnpfrhb1OysmMnY+GRpNOcEPIg5RBOb+bTuYmIg==
+     procedure_id : 4261759717461503391
+     type_code : 12
+     code : |1+
+      fonction CPlanning::InfoZone(PosX, PosY, nNbLignes=1)
+      // Renvoie une chaîne d'information sur la zone survolée
+      Infos est une chaîne
+      JourSurvolé, NumLigne sont des entiers  
+      
+      // Zone survolée = Marge (liste des items)
+      si PosX < :LargeurMarge et PosY > :HauteurEntete alors
+      	NumLigne = :ItemCourant + (PosY - :HauteurEntete) / :HauteurLigne -1
+      	SI NumLigne=0 ALORS RENVOYER ""
+      	si NumLigne>dimension(:TItem) alors renvoyer ""
+      	renvoyer SansEspace(:TItem[NumLigne]:LIBELLEIT)
+      fin
+      
+      // Zone survolée = Entete
+      si PosY < :HauteurEntete alors
+      	// Par défaut on renverra la zone courante
+      	JourSurvolé = :DateCourante
+      	// Mois
+      	si PosY < :PositionJours alors
+      		Infos = ChaîneConstruit(<§$0001§>, dateverschaine(entierversdate(:DateCourante)), dateverschaine(entierversdate(:DateCourante+:NombreColonnes-1)))
+      	fin
+      	// Année
+      	si PosY < :HauteurEntete et PosX < :LargeurMarge  alors
+      		Infos = ChaîneConstruit(<§$0002§>, gauche(entierversdate(:DateCourante),4))
+      		si :EstBissextile() alors Infos += " "+<§$0003§>
+      	fin
+      	// Jour
+      	si PosY > :PositionJours et PosY < :HauteurEntete et PosX > :LargeurMarge alors
+      		// On calcule quel est le jour survolé en se basant sur la largeur des colonnes
+      		JourSurvolé = :DateCourante + ((PosX-:LargeurMarge) / :LargeurColonne)
+      		Infos = ChaîneConstruit(<§$0005§>, dateverschaine(entierversdate(JourSurvolé)))
+      	fin
+      	renvoyer Infos
+      fin
+      
+      // Zone survolée = Le planning
+      si PosX > :LargeurMarge et PosY > :HauteurEntete et ...
+      	PosX < :LargeurChamp et PosY < :HauteurChamp alors
+      	// Jour survolé
+      	JourSurvolé = :DateCourante + ((PosX-:LargeurMarge) / :LargeurColonne)
+      	JourEnChaine est une chaîne = entierversdate(JourSurvolé)
+      	// Ligne survolée
+      	NumLigne = :ItemCourant + ((PosY - :HauteurEntete +6) / :HauteurLigne) -1
+      
+      	// Recherche d'une plage correspondante
+      	i est un entier  
+      	pour i=1 _à_ dimension(:TPlage)
+      		si :TPLage[i]:NUMEROIT=NumLigne alors
+      		
+      			si JourEnChaine >= :TPlage[i]:DATEDEB et JourEnChaine <= :TPlage[i]:DATEFIN
+      				si pas Infos ~="" alors
+      					// Bulle d'aide sur plusieurs lignes si plusieurs tâches le même jour
+      					Infos+=rc	;	nNbLignes++
+      				fin	
+      				Infos += SansEspace(:TPlage[i]:LIBELLEPL)
+      
+      			fin
+      		fin
+      	fin
+      	renvoyer Infos
+      fin
+      
+      // Pas d'infos
+      renvoyer ""
+     type : 458752
+   -
+     name : Init
+     procedure_id : 4261759718540619207
+     type_code : 12
+     code : |1+
+      procedure CPlanning::Init()
+      
+      // Calcul de la taille du planning
+      
+      // Information sur le champ image
+      :HauteurChamp = {:NomFenetre+"."+:NomChampImage,indChamp}..hauteur
+      :LargeurChamp = {:NomFenetre+"."+:NomChampImage,indChamp}..largeur
+      :HauteurLigne = 15//(:HauteurChamp - :HauteurEntete) / :NombreLignes
+      :LargeurColonne = 15//(:LargeurChamp - :LargeurMarge) / :NombreColonnes
+      :NombreColonnes = (:LargeurChamp - :LargeurMarge) / :LargeurColonne
+      :NombreLignes = 70
+      
+      // On divise en deux l'entête pour obtenir la position verticale
+      // d'affichage des jours
+      :PositionJours = :HauteurEntete / 2
+      
+     type : 458752
+   -
+     name : ItemSupprimeTout
+     procedure_id : 4261759717559676369
+     type_code : 12
+     code : |1+
+      // Vide la liste des items
+      Dimension(:TItem,0)
+      
+      // Réinitialise l'ascenseur
+      {:NOMCHAMPASCENSEUR,indChamp}..valeur=1
+      
+      // Réinitialise la position courante
+      :ItemCourant=1
+      
+     type : 458752
+   -
+     name : NbCases
+     internal_properties : CAAAAAgAAABhBweZCl87bYa6qErme8TNlWaPoeEI7ISJT39hNDJoIOTvjR8u72gH20yVwoRQnG0wlnAxmY4Scc5sLDBJH7iDqgPdMAOV9TElsV4NPZ9SQfwSacugCnqZxhAk/qPooiPKZMIAbeZtQYJ0C5laM6TJXQR0Dun2U8ZQFDbd+9jxABwVE9bzS9ijrE/OULhiABT0cA==
+     procedure_id : 4261759717762903515
+     type_code : 12
+     code : |1-
+      fonction CPlanning::NbCases(PosX)
+      
+      // Calcul le nombre de jours (de "cases") du planning
+      // entre la coordonnée de clic et la date de début
+      
+      // On additionne la largeur de la marge + n largeurs de colonne 
+      // jusqu'à dépasser la coordonnée cliquée
+      
+      nJours est un entier
+      boucle
+      	nJours++
+      	si :LargeurMarge+(nJours*:LargeurColonne)>=PosX alors renvoyer (nJours-1)
+      FIN
+      
+      RENVOYER 0
+     type : 458752
+   -
+     name : PlageSupprimeTout
+     procedure_id : 4261759718651702747
+     type_code : 12
+     code : |1+
+      procedure CPlanning::PlageSupprimeTout()
+      
+      // Vide la liste des plages
+      dimension(:TPlage,0)
+      
+     type : 458752
+   -
+     name : RecupPlages
+     internal_properties : CAAAAAgAAABdAoTXtIEi3bqSjT59HEUHOqdJzD6NKnCCdeAqnGljuRaVLpKAey5ju0ibVmDxKQB/opashBA4JNLDCJw5V/ub3Ltl9hhstyRO7Ex1cU3BDk9J3ZGG1tDHnPZjg/ythf3oaYzQShFw7eZdDt5Et7IkM807B5TDiI50rWfk0evB6RdWJprwNr27x0TCrBsEG4OGUA6H7xWMr8VUawCULP5Kzb11ASD5Qxg0QeglpHxJqEzL1eotcRLdtwgOIm2ISw/XK7djuzbUVQ==
+     procedure_id : 4261759717692255707
+     type_code : 12
+     code : |1+
+      procedure CPlanning::RecupPlages(sListePlages,nbTaches)
+      
+      // On demande au planning des informations sur la zone cliquée
+      
+      PosX est un entier = SourisPosX()-5 ; PosY est un entier = SourisPosY()-5
+      JourCliqué, NumLigne, i sont des entiers  
+      JourEnChaine est une chaîne
+      
+      // Zone cliquée = Marge (liste des items)
+      si PosX < :LargeurMarge et PosY > :HauteurEntete alors retour
+      // Zone survolée = Entete
+      si PosY < :HauteurEntete alors retour
+      
+      // Zone cliquée = Zone client
+      si PosX > :LargeurMarge et PosY > :HauteurEntete et ...
+      	PosX < :LargeurChamp et PosY < :HauteurChamp alors
+      	// Jour cliqué
+      	JourCliqué = :DateCourante + ((PosX-:LargeurMarge) / :LargeurColonne)
+      	JourEnChaine = entierversdate(JourCliqué)
+      	// Ligne cliquée
+      	NumLigne = :ItemCourant + ((PosY - :HauteurEntete) / :HauteurLigne)
+      	// Recherche d'une plage correspondante
+      	pour i=1 _à_ dimension(:TPlage)
+      		si :TPLage[i]:NUMEROIT=NumLigne alors
+      			si JourEnChaine >= :TPlage[i]:DATEDEB et JourEnChaine <= :TPlage[i]:DATEFIN
+      				nbTaches++
+      				// Si plusieurs tâches le même jour
+      				si pas sListePlages ~="" alors sListePlages+=tab
+      				sListePlages += :TPlage[i]:VALEURPL
+      			fin
+      		fin
+      	fin
+      fin
+      
+     type : 458752
+   -
+     name : SauveProprietes
+     procedure_id : 4261759717243858416
+     type_code : 12
+     code : |1+
+      // Sauvegarde les propriétés du planning
+      // (couleurs, marges, etc.)
+      // Les paramètres sont stockés dans le fichier désigné par NomFichier
+      // ce paramètre doit être un chemin complet
+      // Pour charger les propriétés, utiliser "ChargeProprietes"
+      procedure SauveProprietes(NomFichier)
+      // La méthode utilisée est celle du .INI
+      iniecrit("PROPRIETES","AfficheMidi",NumériqueVersChaine(:AfficheMidi),NomFichier)
+      iniecrit("PROPRIETES","CoulFond",NumériqueVersChaine(:CoulFond),NomFichier)
+      iniecrit("PROPRIETES","CoulFondEntete",NumériqueVersChaine(:CoulFondEntete),NomFichier)
+      iniecrit("PROPRIETES","CoulFondMarge",NumériqueVersChaine(:CoulFondMarge),NomFichier)
+      iniecrit("PROPRIETES","CoulCadres",NumériqueVersChaine(:CoulCadres),NomFichier)
+      iniecrit("PROPRIETES","CoulMidi",NumériqueVersChaine(:CoulMidi),NomFichier)
+      iniecrit("PROPRIETES","CoulMois",NumériqueVersChaine(:CoulMois),NomFichier)
+      iniecrit("PROPRIETES","CoulNumJour",NumériqueVersChaine(:CoulNumJour),NomFichier)
+      iniecrit("PROPRIETES","LargeurMarge",NumériqueVersChaine(:LargeurMarge),NomFichier)
+      iniecrit("PROPRIETES","HauteurEntete",NumériqueVersChaine(:HauteurEntete),NomFichier)
+      iniecrit("PROPRIETES","NombreColonnes",NumériqueVersChaine(:NombreColonnes),NomFichier)
+      iniecrit("PROPRIETES","NombreLignes",NumériqueVersChaine(:NombreLignes),NomFichier)
+      iniecrit("PROPRIETES","MargeEnteteX",NumériqueVersChaine(:MargeEnteteX),NomFichier)
+      iniecrit("PROPRIETES","MargeEnteteY",NumériqueVersChaine(:MargeEnteteY),NomFichier)
+      
+     type : 458752
+   -
+     name : Survol
+     procedure_id : 4261759717818215940
+     type_code : 12
+     code : |1+
+      Procédure globale CPlanning::Survol()
+      
+      // Récupération du pointeur sur l'objet
+      // (méthode appelée par timer ou événement)
+      ObjetCourant est un objet dynamique = CPlanning::pObjet
+      
+      // Si le champ survolé n'est pas le planning alors on rend la bulle invisible et on ne fait rien
+      si pas ChampSurvol() ~= ObjetCourant:NomChampImage ou pas fenencours() ~= ObjetCourant:NomFenetre alors
+      	{ObjetCourant:NomChampBulle,indChamp}..visible=faux
+      	Retour
+      fin
+      
+      sPosx, sPosY sont des entiers
+      sPosx=poidsfaible(curseurpos(cpclient))
+      sPosY=poidsfort(curseurpos(cpclient))
+      
+      // On demande au planning des informations sur la zone survolée
+      Infos est une chaîne
+      nNbLignes est un entier = 1
+      Infos = ObjetCourant:InfoZone(sPosx, sPosY, nNbLignes)
+      
+      // Il n'y a aucune info à afficher alors on rend la bulle invisible
+      si Infos = "" alors {ObjetCourant:NomChampBulle,indChamp}..visible=faux sinon {ObjetCourant:NomChampBulle,indChamp}..visible=vrai
+      
+      // Affichage de la bulle
+      {ObjetCourant:NomChampBulle,indChamp}..libelle = Infos
+      {ObjetCourant:NomChampBulle,indChamp}..largeur = textelargeur(ObjetCourant:NomChampBulle,Infos)*1.20
+      {ObjetCourant:NomChampBulle,indChamp}..hauteur = 20*nNbLignes // n pixels de haut pour une ligne dans la bulle d'aide
+      {ObjetCourant:NomChampBulle,indChamp}..y = sPosY
+      {ObjetCourant:NomChampBulle,indChamp}..x = sPosx
+      // Ajustements pour ne pas sortir de l'écran
+      si {ObjetCourant:NomChampBulle,indChamp}..y > sysyres()-{ObjetCourant:NomChampBulle,indChamp}..hauteur alors
+      	{ObjetCourant:NomChampBulle,indChamp}..y = sysyres()-{ObjetCourant:NomChampBulle,indChamp}..hauteur
+      fin
+      si {ObjetCourant:NomChampBulle,indChamp}..x > sysxres()-{ObjetCourant:NomChampBulle,indChamp}..largeur alors
+      	{ObjetCourant:NomChampBulle,indChamp}..x = sysxres()-{ObjetCourant:NomChampBulle,indChamp}..largeur
+      fin
+      
+     type : 458752
+   -
+     name : TraceCadres
+     procedure_id : 4261759717374864950
+     type_code : 12
+     code : |1+
+      procedure CPlanning::TraceCadres()
+      
+      // Dessine le calendrier
+      i, x, y sont des entiers
+      
+      // Par défaut trait plein
+      dstylo(:CoulCadres, 0)
+      
+      // Les fonds
+      drectangle(0,0,:LargeurChamp,:HauteurChamp,:CoulFond,:CoulFond)
+      dRectangle(0,0,:LargeurChamp,:HauteurEntete,:CoulFondEntete,:CoulFondEntete)
+      dRectangle(0,:HauteurEntete+1,:LargeurMarge,:HauteurChamp,:CoulFondMarge,:CoulFondMarge)
+      
+      // Séparation entête et marge
+      dligne(0,:HauteurEntete,:LargeurChamp,:HauteurEntete,:CoulCadres)
+      dligne(:LargeurMarge,0,:LargeurMarge,:HauteurChamp,:CoulCadres)
+      
+      // Séparation des jours dans l'entête
+      dligne(0,:PositionJours,:LargeurChamp,:PositionJours,:CoulCadres)
+      
+      // Samedi, Dimanche et Jours fériés
+      x1,y1,x2,y2 	sont des entiers
+      Férié		 	est un booleen
+      pour i=0 _à_ :NombreColonnes-1
+          // Trait de séparation des jours
+      	x = :LargeurMarge+((i+1) * :LargeurColonne)
+      	dLigne( x, :PositionJours, x, :HauteurChamp, :CoulCadres )
+      	// Mise en valeur si jour férié ou Week-End
+      	sDate est une date
+      	sDate = :DateCourante
+      	sDate += i
+      	Férié=clJourFérié:bFérié(sDate)
+      	si Férié ou EntierVersJour(:DateCourante+i)=6 ou EntierVersJour(:DateCourante+i)=7 alors
+      		x1 = (:LargeurMarge+(i * :LargeurColonne))
+      		x2 = x1+:LargeurColonne
+      		y1 = :HauteurEntete+1
+      		y2 = :HauteurChamp
+      		drectangle(x1,y1,x2,y2,igrisclair,igrisfonce)
+      	FIN
+      	
+      	// aujourd'hui est d'une autre couleur
+      	SI sDate=DateSys() ALORS
+      		x1 = (:LargeurMarge+(i * :LargeurColonne))
+      		x2 = x1+:LargeurColonne
+      		y1 = :HauteurEntête+1
+      		y2 = :HauteurChamp
+      		dRectangle(x1,y1,x2,y2,RVB(255, 244, 202),iGrisFoncé)
+      	FIN
+      fin
+      
+      // Lignes
+      pour i=1 _à_ :NombreLignes
+      	y = :HauteurEntete+(i * :HauteurLigne)
+      	dLigne( 0, y, :LargeurChamp, y, :CoulCadres )
+      fin
+      
+      // Séparateur demi-journées
+      si :AfficheMidi alors
+      	dstylo(:CoulMidi, 2)
+      	pour i=0 _à_ :NombreColonnes-1
+      		// On trace un séparateur en pointillés à moitié de chaque jour
+      		x = (:LargeurMarge+(i * :LargeurColonne)) + (:LargeurColonne/2)
+      		dLigne( x, :HauteurEntete+1, x, :HauteurChamp )
+      	fin
+      fin
+      
+      
+     type : 458752
+   -
+     name : TraceItems
+     procedure_id : 4261759719038103144
+     type_code : 12
+     code : |1+
+      procedure CPlanning::TraceItems()
+      
+      // Dessine la liste des éléments dans la marge
+      
+      // Pour parcourir les items
+      i est un entier
+      // Ligne en cours d'affichage
+      Ligne est un entier
+      // Position verticale de l'élément à afficher
+      PositionY est un entier
+      // Pour tronquer l'item à la largeur de la marge
+      sTxt est une chaine
+      nLargeurTxt, nLargeurPoints sont des entiers
+      
+      // On parcourt les items à partir de l'item courant
+      pour i=:ItemCourant _à_ dimension(:TItem)
+      	// On passe à la ligne suivante
+      	Ligne++
+      	si Ligne>:NombreLignes alors sortir // maxi = nombre de lignes affichables
+      	// Calcul de la position verticale (on prend en compte la marge et l'entête)
+      	PositionY = :MargeItemY+:HauteurEntete+((Ligne-1)*:HauteurLigne)
+      	// On tronque le libellé de l'item à la largeur de la marge
+      	sTxt = SansEspace(:TItem[i]:TEXTEIT)
+      	nLargeurTxt = textelargeur(:NomChampBulle,sTxt)
+      	nLargeurPoints = textelargeur(:NomChampBulle,"...")
+      	// Pas assez de place en largeur => on tronque
+      	si (nLargeurTxt+nLargeurPoints)>:LargeurMarge alors
+      		// ... pour signaler que le texte est tronqué
+      		tantque (nLargeurTxt+nLargeurPoints)>:LargeurMarge
+      			sTxt=sTxt[[ à taille(sTxt)-1]]	// Enlève le dernier caractère
+      			si taille(sTxt)<3 alors			// Moins de 3 caractères affichables
+      			sTxt="" ; sortir					// = Pas la place
+      		fin
+      		nLargeurTxt = textelargeur(:NomChampBulle,sTxt)  	// Recalcule la taille
+      	FIN
+      		si pas sTxt~="" alors sTxt+="..."
+      	fin
+      	// On affiche le texte dans la couleur voulue
+      	dtexte(2, PositionY, sTxt, :TItem[i]:COULEURIT )
+      fin
+      
+     type : 458752
+   -
+     name : TraceJours
+     procedure_id : 4261759718785527420
+     type_code : 12
+     code : |1+
+      procedure CPlanning::TraceJours()
+      
+      // Pour parcourir chaque colonne
+      i est un entier  
+      // Pour le calcul de la position horizontale
+      xJour,xMois sont des entiers
+      // Date à afficher
+      lDate est un entier  
+      // Pour construire la chaîne affichée
+      sChaineJour est une chaîne
+      // Numéro de jour du mois
+      sJour est une chaîne
+      
+      // On dessine le jour pour chaque colonne
+      pour i = 0 _à_ :NombreColonnes
+      	lDate = :DateCourante + i
+      	
+      	// Lettre du jour
+      	sChaineJour = gauche(entierversjourenlettre(lDate),1)
+      	
+      	// Numéro de jour
+      	sJour = droite(entierversdate(lDate),2)
+      	sChaineJour += " "+sJour
+      	
+      	// Position horizontale en prenant en compte la marge
+      	xJour = :MargeEnteteX + :LargeurMarge+(i * :LargeurColonne)
+      	
+      	// On sélectionne la police verticale
+      	dPolice(:NomPoliceJour, :HauteurPoliceJour, :AttrPoliceJour, 90)
+          si EntierVersJour(lDate)=6 ou EntierVersJour(lDate)=7 alors
+      		// Samedi-Dimanche mis en valeur
+      		dtexte( xJour, :HauteurEntete-2, sChaineJour, imagentaclair )
+      	sinon
+      		sdate est une date
+      		sdate = lDate
+      		si clJourFérié:bFerie(sdate) alors
+      			// Jour férié
+      			dtexte( xJour, :HauteurEntete-2, sChaineJour, imagentaclair )
+      		sinon
+      			// Autres jour : couleur par défaut
+      			dtexte( xJour, :HauteurEntete-2, sChaineJour, :CoulNumJour )
+      		FIN
+      	fin
+      	
+      	// On change de mois alors on trace une séparation et on affiche le nom du mois
+      	si sJour = "01" alors
+      		xMois = :LargeurMarge + (i * :LargeurColonne)
+      		dligne( xMois, 0, xMois, :PositionJours, :CoulCadres )
+      		// On sélectionne la police horizontale
+      		dPolice(:NomPoliceJour, :HauteurPoliceJour, :AttrPoliceJour, 0)
+      		dtexte( xMois+:MargeEnteteX, :MargeEnteteY, entierversmoisenlettre(lDate), :CoulMois )
+      	fin
+      fin
+      
+      // On sélectionne la police horizontale
+      dPolice(:NomPoliceJour, :HauteurPoliceJour, :AttrPoliceJour, 0)
+      
+      // On affiche le mois et l'année s'il reste assez de place
+      si val(entierversdate(:DateCourante)[[7 a 8]])<27 alors
+      	dtexte( :MargeEnteteX+:LARGEURMARGE, :MargeEnteteY , entierversmoisenlettre(:DateCourante), :CoulMois ) 
+      fin
+      
+      // On est dans la ligne des jours, on utilise donc la marge des jours
+      dtexte( :MargeEnteteX, :MargeEnteteY, gauche(entierversdate(:DateCourante),4), :CoulMois )
+      
+     type : 458752
+   -
+     name : TraceLibelle
+     internal_properties : CAAAAAgAAAAH6U9GooQm/3fZBkVhgXjA1df+1InIVFCTjeQ/Ew/B4gmAVGENUkjSCd1Uvl0/kjG4ZHEl6LUbeyg1UvnQ5wIc1UpxasZO9qMGiG6Gu0lyVy8Xil8yTkIKQIRisLH6mCXMIEoYb+SfV3yEI/notazJiRr+9PXi5w5oBtopyddzB8gWMNAGmCU2Zpr2qGIuCTWsyJA14YO4YkqEdZuK4GUm/lG+j5o5ZSzMah2ib9GgDvoO
+     procedure_id : 4261759717112721100
+     type_code : 12
+     code : |1+
+      Procédure CPlanning::TraceLibelle(xTxt, yTxt, x2, y2, sTxt)
+      
+      SI sTxt~="" alors retour
+      
+      nLargeur est un entier = x2-xTxt	// Place dispo en largeur
+      nHauteur est un entier = y2-yTxt	// Place dispo en hauteur
+      
+      // Taille du texte dans la police demandée
+      nLargeurTxt est un entier = textelargeur(:NomChampBulle,sTxt)
+      nHauteurTxt est un entier = textehauteur(:NomChampBulle,sTxt)
+      nLargeurPoints est un entier = textelargeur(:NomChampBulle,"...")
+      
+      // Pas assez de place en largeur => on tronque
+      si (nLargeurTxt+nLargeurPoints)>nLargeur alors
+          // ... pour signaler que le texte est tronqué
+      	tantque (nLargeurTxt+nLargeurPoints)>nLargeur
+      		sTxt=sTxt[[ à taille(sTxt)-1]]					// Enlève le dernier caractère
+      		si taille(sTxt)<3 alors							// Moins de 3 caractères affichables
+      			sTxt="" ; sortir								// = Pas la place
+      		fin
+      		nLargeurTxt = textelargeur(:NomChampBulle,sTxt)  	// Recalcule la taille
+      	FIN
+      	si pas sTxt~="" alors sTxt+="..."
+      fin
+      
+      // Pas assez de place en hauteur => on affiche pas le libellé
+      si nHauteurTxt<=nHauteur alors
+      	// Tracé du libellé sur la barre
+      	dPolice("Arial",8,iGras)
+      	dtexte(xTxt, yTxt, sTxt,inoir)
+      fin
+      
+     type : 458752
+   -
+     name : TracePlages
+     internal_properties : CAAAAAgAAADl+4srPvvrVaZmWDqqv2jBxTLnwUWMwGRZCy854P7EvGxD1Z+aIzwfa3gNKgAsoLlYClhxTSqe8bZQnGAd02wXal/NUNc5wTk9V/BrV0U0r07YgyFaWMx/YG6efDU23PEs8vTel0QfF9wyVZdMUY4nL/reBOvsvbTKslDztf7TZvZjpcQNuYqpLvVwOh5sfJBw9A==
+     procedure_id : 4261759718776352500
+     type_code : 12
+     code : |1+
+      procedure CPlanning::TracePlages()
+      
+      // Traces les barres des plages visibles
+      
+      Ligne, NombreLigne, i, j, x1, x2, y1, y2 sont des entiers
+      bArrondiGauche, bArrondiDroite sont des booleens
+      sTxt, sImg sont des chaines		// Texte à écrire sur la barre (+icône facultative)
+      x1Txt, y1Txt sont des entiers	// Position du texte
+      Ligne = 1
+      NombreLigne = dimension(:TItem)
+      // Ne dépasse pas le nombre de lignes affichables
+      si NombreLigne > :NombreLignes alors NombreLigne = :NombreLignes
+      // On parcourt les items à partir de l'item courant
+      pour i=:ItemCourant à NombreLigne
+          // On parcourt les plages
+      	pour j=1 _à_ dimension(:TPlage)
+      		// On ne prend que les plages de l'item en cours
+      		si :TPlage[j]:NUMEROIT=i alors
+      	 		// On ne prend que les plages de la période affichée
+      			si 	:TPlage[j]:DATEDEB <= entierversdate(:DateCourante+:NombreColonnes) et ...
+      				:TPlage[j]:DATEFIN >= entierversdate(:DateCourante) alors
+      				// y1 = l'entête + x fois la hauteur d'une ligne
+      				y1 = :HauteurEntete+((Ligne-1)*:HauteurLigne)
+      				// y2 = y1 + la hauteur d'une ligne
+      				y2 = y1 + :HauteurLigne
+      				// x1 = la marge +...
+      				x1 = :LargeurMarge
+      				// ... x fois la largeur d'une ligne
+      				// x étant l'écart entre la date courante et la date de début
+      				x1 = x1 + (dateversentier(:TPlage[j]:DATEDEB) - :DateCourante) * :LargeurColonne
+      				// x2 = x1 + le nombre de jours de la période * la largeur d'une colonne
+      				x2 = x1 + (:LargeurColonne * (1+(dateversentier(:TPlage[j]:DATEFIN) - dateversentier(:TPlage[j]:DATEDEB))))
+      				// Prise en compte des demis journées
+      				si :TPlage[j]:DEBUTMIDI alors x1 = x1 + (:LargeurColonne/2)
+      				si :TPlage[j]:FINMIDI alors x2 = x2 - (:LargeurColonne/2)
+      				// Pour ne pas déborder
+      				si x1 < :LargeurMarge alors x1 = :LargeurMarge - 1
+      				si x2 > :LargeurChamp alors x2 = :LargeurChamp + 1
+      				// Arrondir les bords de la barre ?
+      				bArrondiGauche = pas :bPlageContigue((j-1), (j))
+      				bArrondiDroite = pas :bPlageContigue((j), (j+1))
+      				:TraceUneBarre( (j), (x1), (y1), (x2), (y2) , :TPlage[j]:COULEURFPL, :TPlage[j]:COULEURTPL,...
+      								 bArrondiGauche, bArrondiDroite)
+      				// 1ère plage de la tâche ?
+      				SI bArrondiGauche ALORS
+      					// Mémorise les coordonnées de début et le texte à écrire (+icône facultative)
+      					x1Txt=(x1+4) ; y1Txt=(y1+3)
+      					sTxt=:TPlage[j]:LIBCOURT ; sImg=:TPlage[j]:IMAGE
+      				FIN
+      				// Dernière plage de la tâche ?
+      				SI bArrondiDroite ALORS
+      					// Tracé du texte (+ icône devant)
+      					:TraceLibelle(:TraceImage(x1Txt, y1Txt, y2, sImg), y1Txt, x2, y2, sTxt)
+      				FIN
+      			fin
+      		fin
+      	fin
+      	Ligne++
+      fin
+      
+     type : 458752
+   -
+     name : TracePlanning
+     procedure_id : 4261759718207696658
+     type_code : 12
+     code : |1+
+      procedure CPlanning::TracePlanning(bSelonAscenseur=faux)
+      
+      // Position du planning selon l'ascenseur
+      si bSelonAscenseur alors
+      	:ChItemCourant({:NomChampAscenseur,indChamp})	
+      sinon
+      	{:NomChampAscenseur,indChamp}=:ItemCourant
+      fin
+      
+      // Calculs des paramètres internes
+      :Init()
+      
+      // Trace le planning dans le champ image
+      ddebutdessin(:NomChampImage)
+      :TraceCadres()	// Les cadres
+      :TraceJours()	// Les jours
+      :TraceItems()	// Les items
+      :TriePlages()	// Trie les plages par Item en ordre chronologique
+      :TracePlages()	// Les plages
+     type : 458752
+   -
+     name : TraceUneBarre
+     procedure_id : 4261759718205206290
+     type_code : 12
+     code : |1+
+      procedure TraceUneBarre( nPlage <utile>, x1, y1, x2, y2 ,...
+      						 CouleurFond=icyanclair, CouleurTrait=inoir ,...
+      						 bArrondiGauche=faux,bArrondiDroite=faux)
+      si x2-x1<=8 alors
+      	bArrondiGauche=faux
+      	bArrondiDroite=faux
+      FIN
+      
+      // Dessin d'une plage du planning
+      
+      nMarge1 est un entier = 1		// Marge de base
+      nMarge2 est un entier = 2		// Marge entre la barre et la cellule
+      
+      x1+=nMarge1 ; y1+=nMarge1
+      
+      // Forme de la barre ?
+      si bArrondiGauche
+       	si bArrondiDroite alors
+      		// 2 bords arrondis
+      		dcercle(x1, y1+nMarge2, x1+(y2-y1), y2-nMarge2+1, CouleurFond, CouleurTrait)	// Gauche
+      		dcercle(x2-(y2-y1), y1+nMarge2, x2, y2-nMarge2+1, CouleurFond, CouleurTrait)	// Droite
+      		drectangle(x1+(y2-y1)/2, y1+nMarge2, x2-(y2-y1)/2, y2-nMarge2, CouleurFond, CouleurFond)
+      		dligne(x1+(y2-y1)/2, y1+nMarge2, x2-(y2-y1)/2, y1+nMarge2, CouleurTrait)
+      		dligne(x1+(y2-y1)/2, y2-nMarge2, x2-(y2-y1)/2, y2-nMarge2, CouleurTrait)
+      	sinon
+      		// Barre arrondie à gauche
+      		dcercle(x1, y1+nMarge2, x1+(y2-y1), y2-nMarge2+1, CouleurFond, CouleurTrait)
+      		drectangle(x1+(y2-y1)/2, y1+nMarge2, x2, y2-nMarge2, CouleurFond, CouleurFond)
+      		dligne(x1+(y2-y1)/2, y1+nMarge2, x2, y1+nMarge2, CouleurTrait)
+      		dligne(x1+(y2-y1)/2, y2-nMarge2, x2, y2-nMarge2, CouleurTrait)
+      	fin
+      sinon
+      	si bArrondiDroite alors
+      		// Barre arrondie à droite
+      		dcercle(x2-(y2-y1), y1+nMarge2, x2, y2-nMarge2+1, CouleurFond, CouleurTrait)
+      		drectangle(x1, y1+nMarge2, x2-(y2-y1)/2, y2-nMarge2, CouleurFond, CouleurFond)
+      		dligne(x1, y1+nMarge2, x2-(y2-y1)/2, y1+nMarge2, CouleurTrait)
+      		dligne(x1, y2-nMarge2, x2-(y2-y1)/2, y2-nMarge2, CouleurTrait)
+      	sinon
+      		// 2 bords droits
+      		drectangle(x1, y1+nMarge2, x2, y2-nMarge2, CouleurFond, inoir)
+      		dligne(x1, y1+nMarge2, x2, y1+nMarge2, CouleurTrait)
+      		dligne(x1, y2-nMarge2, x2, y2-nMarge2, CouleurTrait)
+      	FIN
+      FIN
+      
+     type : 458752
+   -
+     name : TriePlages
+     procedure_id : 4261759717653983044
+     type_code : 12
+     code : |1+
+      Procédure CPlanning::TriePlages()
+      
+      // Trie les plages par Item en ordre chronologique
+      // à l'aide d'une zone mémoire
+      
+      // Transfert le tableau dynamique dans une zone mémoire pour le tri
+      memcree("ZTriMem")
+      
+      i est un entier  
+      pour i = 1 _à_ dimension(:TPlage)
+      	memajoute("ZTriMem",...
+      	NumériqueVersChaine(:TPlage[i]:NUMEROIT,"010d")+:TPlage[i]:DATEDEB+:TPlage[i]:DEBUTMIDI,...
+      	:TPlage[i]:NUMEROIT+tab+:TPlage[i]:DATEDEB+tab+:TPlage[i]:DEBUTMIDI+tab+:TPlage[i]:DATEFIN+tab+...
+      	:TPlage[i]:FINMIDI+tab+:TPlage[i]:VALEURPL+tab+:TPlage[i]:LIBELLEPL+tab+:TPlage[i]:COULEURFPL+tab+...
+      	:TPlage[i]:COULEURTPL+tab+:TPlage[i]:IMAGE+tab+:TPlage[i]:LIBCOURT+tab+:TPlage[i]:IDTACHE)
+      FIN
+      // Tri la zone mémoire
+      MemTrie("ZTriMem") ; sLigne est une chaine
+      // Recrée le tableau dynamique d'après la zone mémoire triée
+      Dimension(:TPlage,0)
+      Dimension(:TPlage,memoccurrence("ZTriMem"))
+      pour i=1 _à_ memoccurrence("ZTriMem")
+      	sLigne=memrecupere("ZTriMem",i)
+      	:TPlage[i]:NUMEROIT = ExtraitChaine(sLigne,1)
+      	:TPlage[i]:DATEDEB = ExtraitChaine(sLigne,2)
+      	:TPlage[i]:DEBUTMIDI = ExtraitChaine(sLigne,3)
+      	:TPlage[i]:DATEFIN = ExtraitChaine(sLigne,4)
+      	:TPlage[i]:FINMIDI = ExtraitChaine(sLigne,5)
+      	:TPlage[i]:VALEURPL = ExtraitChaine(sLigne,6)
+      	:TPlage[i]:LIBELLEPL = ExtraitChaine(sLigne,7)
+      	:TPlage[i]:COULEURFPL = ExtraitChaine(sLigne,8)
+      	:TPlage[i]:COULEURTPL = ExtraitChaine(sLigne,9)
+      	:TPlage[i]:IMAGE = ExtraitChaine(sLigne,10)
+      	:TPlage[i]:LIBCOURT = ExtraitChaine(sLigne,11)
+      	:TPlage[i]:IDTACHE = ExtraitChaine(sLigne,12)
+      fin
+      // Destruction de la zone mémoire
+      MemSupprimeTout("ZTriMem")
+      
+     type : 458752
+   -
+     name : InitialisePeriode
+     procedure_id : 4265152221759161631
+     type_code : 12
+     code : |1+
+      Procédure InitialisePeriode(sDateDebut="",sDateFin="")
+      
+      // On vide le planning
+      :ItemSupprimeTout() ; :PlageSupprimeTout()
+      // On paramètre le planning selon les dates demandées
+      :ChDateDebut(sDateDebut) ; :ChDateFin(sDateFin)
+      // Nombre de colonnes
+      :NombreColonnes=:DateFin-:DateDebut+1
+      //// On affiche 3 mois maxi à la fois
+      //SI :NombreColonnes>(3*31) ALORS :NombreColonnes=(3*31)
+      // On se positionne sur le 1er jour
+      :DateCourante=:DateDebut
+     type : 458752
+   -
+     name : TraceImage
+     procedure_id : 4265404319944272066
+     type_code : 12
+     code : |1-
+      fonction TraceImage(xImg, yImg, y2Img, sImg)
+      
+      // Affichage de l'icône au début de la barre
+      si sImg~="" alors renvoyer xImg
+      
+      // Taille de l'image ?
+      sPropImg est une chaine = infobitmap(sImg)
+      si sPropImg[[1 à 3]] ~= "BAD" alors renvoyer xImg
+      nLargeurImg est un entier=val(extraitchaine(sPropImg,2,tab))
+      nHauteurImg est un entier=val(extraitchaine(sPropImg,3,tab))
+      // Affichage de l'image
+      {:NomFenetre+"."+:NomChampImage,indChamp} = gcoord(xImg,yImg+(((y2Img-yImg)-nHauteurImg)/2))+gimage(sImg)
+      
+      // Renvoie la position de fin de l'image
+      renvoyer (xImg+nLargeurImg)
+     type : 458752
+   -
+     name : sJourCliqué
+     internal_properties : CAAAAAgAAAAEXf0XyOwe/NTD0jHm82nlAvMR5dHW72uW/G7NKILt1RyuXhVirXD2cqFPBArHIQpVjTCln5c0nRnzCUL1HvlkahP+Li0WZ5Ly7P5t/sw3SPjtjCQXvvz8dLbFWhQyQZaG8P2obvkQgwIeKCfNHQWu7zIDst5lGpJC4vFVkrOGPiLQvYThqTb4SKYf2pnTu8bmVhN1BiK/Mro0HhnHeGTWVzxkmOwTDZWjvb/mBqXHVfQ=
+     procedure_id : 4356401814439311466
+     type_code : 12
+     code : |1-
+      Procédure sJourCliqué()
+      
+      // On demande au planning le jour cliqué
+      
+      PosX est un entier = SourisPosX()+4
+      PosY est un entier = SourisPosY()
+      
+      JourCliqué		est un entier
+      JourEnChaine 	est une chaîne
+      
+      // Zone cliquée = Marge (liste des items)
+      si PosX < :LargeurMarge et PosY > :HauteurEntete alors renvoyer ""
+      
+      // Zone survolée = Entete
+      si PosY < :HauteurEntete alors renvoyer ""
+      
+      // Zone cliquée = Zone client
+      si PosX > :LargeurMarge et PosY > :HauteurEntete et PosX < :LargeurChamp et PosY < :HauteurChamp alors
+      	// Jour cliqué
+      	JourCliqué = :DateCourante + ((PosX-:LargeurMarge) / :LargeurColonne)
+      	JourEnChaine = entierversdate(JourCliqué)
+      fin
+      
+      renvoyer JourEnChaine
+     type : 458752
+   -
+     name : nLigne
+     procedure_id : 4358262539191604743
+     type_code : 12
+     code : |1+
+      Procédure nLigne(pnY)
+      
+      nligneEnCours est un entier
+      nligneEnCours =  :ItemCourant + ((pnY - :HauteurEntete +14) / :HauteurLigne) -1
+      
+      // Ligne survolée
+      renvoyer nligneEnCours
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+resources :
+ string_res :
+  identifier : 0x3b31c2a63187fb2f
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+  strings :
+   -
+     text :
+      fr-FR : Page n°%1/%2
+     index : 0
+   -
+     text :
+      fr-FR : Période du %1 au %2
+     index : 1
+   -
+     text :
+      fr-FR : Année %1
+     index : 2
+   -
+     text :
+      fr-FR : (Bissextile)
+     index : 3
+   -
+     text :
+      fr-FR : Planning du %1 au %2
+     index : 4
+   -
+     text :
+      fr-FR : Journée du %1
+     index : 5
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

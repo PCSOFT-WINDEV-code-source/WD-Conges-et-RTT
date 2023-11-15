@@ -1,0 +1,316 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : FenOuiNon
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : FenOuiNon
+ identifier : 0x22b140c01c0bc674
+ internal_properties : CAAAAAgAAACHFzKlsTo71AxJeoQXPJi257/3nZz/7Q706vg/GDthbK1FUnJ3RR9PDuA70i+zL2u81/wljiCJOcok9JvbiSdFsGGHrNNJZUFjnyBVsGcOylOINsm7Nc0r3F3Vp4KpvEHqTPnCpxFRAN5Se/AAOckxuWjZmVHDFTNpt+YS9ZLMQxSwnQOaQ93OcPXGBog2YjcZJeotu6FDhBRC26nV/QtgBz2e/hoEQi/ZSgRTTrH/t4E2De+hAidribiJa/O/cMctr5KFag7RuF2TRMw/NUjsEAdKgCwr/t4CjwlB7LT9QF1Az3gtP0y6BVEnMbNXU8iMP1QrkvFmWRZPXjhqcq4G20m+it4S8GLe04X9VieDs1uwteW5SPsZ9yormEq+HoJa6Kh3uTFTHAxqMFgyZZ4WS8J+2fDIEJ54F3hUm0AGFQWnTLz7CLAm5uoyW2HjUKGzk2SL54b7DD+fEnRL8NK9B/8SufXRRL0GvNpmu8oJQELyOWWzJ4MIEvifULrnt2gr0Ycx3lu/gQ7r7QlsCmWbspCt/73VKrejHVTY1OP/Z8xGbxVqfJ7w2VGN+lz1KcaSpwZTisaYKf4jM8UgzAt8XnYn6sxt+ss6TroIUV+HQwv5gQ8ez0PLRu836QqIWbRaPlRQJ93O21M5hNI+iKhrfVlXRoWSNhvy/PUNgY7OdN8mc0pfcHJm5+LglBIjCk8tSyYSfSCfMvwoGbG1Z4vQq8/unaCQnakzZ2hZLL8ml2vFGwDbP+VrWAdizZIyfAxTSTxNiW1SM90l2w6hZKnlVDO9sUNHjMAISRtZxboMiQkMbaAf2xw=
+ properties :
+  width : 445
+  height : 366
+  widthClient : 443
+  heightClient : 334
+ controls :
+  -
+    name : IMG_INFO
+    identifier : 0x22b140c01c10c6c2
+    internal_properties : CAAAAAgAAADZEK53jq55eXtq9fZQiXB4xscNk2K+DvWyaHR3VQW9+vJOZ2m+00Tho1l7GPoZLh9HzoptIGn5nZzkyzqxPpu0Rud4/H474TPyu+SPlTXIHr0qWZGkdoLNdvSu7XZcqwWqDNiy3tB/LtJCIKaXzZZCPtjxNDZac+Dy+Jjp/1KR7o5KmsMPJkuZLzDCbL4QMzi9Cd3dIm7R7HD/FWU1BlH8nKlURKWIdpEujrVQ/31B5yqhWRgR300Ok8bEewWIoLBpmcIs8aOhROxgwNBwgKBp6hY28BXPSM09BNG8m7ok3PIOxGshfem4FMDqFhGjDSWQYgmF9aBO2fGMN43nbvfc9hDWE42CUKh7ICVJgatdSoYNQpMsLL/RAG0l8+gWy7u9efNouz6BqDhh/MsLx2FHzpUCUfReLlKt/Ltnwg/Q5AXPpioHh6dpgkTdQyiFzPzak0EMWe5AOmrB0B10dV/OTSyfrTixVT/sJV2VuAMnXvkZGgv8Vp+kSpT9O1SavsAT2EItNNdxVIpwjPFu6TPEvbl7VQEXqfN+GmHsDa6tndwlrRL3nCugRYoDnjBDcOw9
+    properties :
+     x : 11
+     y : 15
+     width : 34
+     height : 34
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        code : |1-
+         
+        type : 18
+  -
+    name : BTN_NON
+    identifier : 0x22b140c01c16c6c2
+    internal_properties : CAAAAAgAAAAfj2b3EnF9nGHLWd1LVpR1e5WklK/ywzcJsvtqkWuXAOMgwmfckvX8+ISyzs/GV95sZM33VqJuAPZYdn1EJVhFzN4KuU3v+eP2BMY5hbqB5eR6+nnLOGIbD0gyHIIgNtvIcUpVLR1Abz9F8GzIor/7ILDK0KMUvjU5DCx3k+jHcGTqt6XoN0V4j1R8ycQVxLoTFvVGviIpPlUrlw3P+1py941hdiA7DLpKlhEQM/wC6wbhWF0TkDtIjfjS7wQlS/kVhn1GPkOpkcIzdOT+OdI+1k+MJDSH2C+PPlpubjRZV9EAfKRwB6XHj4XD1sQLwaNqEtDA2FNMNLlhSPfGvjbJNfv4BtBfwjqvjcE8lCiRRvuN5by2ZGu6MvQakkfOzarwzf/sbrAyuNsNiQRTFQ85J5UWXnODMUWNRtGe1hIRgiweLST1/IErcI1Lhcpe/Gm3zz5Bsuj9l0tnQkbGub+HMa//TSG3VS3VR7TbNCWQKbfovoz7TQnFr9gd7qHH6sF4kxBU8vJYrkQOzZa4c5SUcSAMgJY1xlFOK4btkF9gV+j9SIimKL+PPSQKBIaOiLpyZv5qeCWaJfG/93OoupvGsOkjwBuoKOX/TyjKdB3/1pnnvqaWMkF0NucJU3+IOG4dufmqQKvNF310coc6VxLxXrbRH3BtLZ93EmCmWiHgIqoGdG8DXj3ghi2hDD9Yyl6bsV2FfCCEzfMQ3wVeNC0/sa0Xeg9TuFYDUAgNMCcgPgS06KF9f1U6CC0U/sfaXnVvNihmgHb8AC2zA51pMTmLF7bbBsNR32h6CDwvIMIIS+kE6CqXAy2IcvYC8PP643y6FUpkhGZ+hG7tp8HB2kRtfvJi1cM13CRWYIOhD+S294VO4VDJDhOdpK21EMaH7xx8ln3pfvQnmCqGpnzry0iTh4ya2fm6oOk+eyDLmJEPWOOwkJiEcf4P
+    properties :
+     x : 139
+     y : 149
+     width : 75
+     height : 23
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        code : |1-
+         ferme("", non)
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_OUI
+    identifier : 0x22b140c01c17c6c2
+    internal_properties : CAAAAAgAAABsggG+CoQFV21RwMFZ/MxVa+ohd2s2bU5/J5hxE/yDrsdXW8KN4eN1mAVjnc8sD2IO0P1d51G+AT4xiFJD8mnd4rkYOYZuIjMVPQGK++ENwMiqekdzTd9naBQMIZ81zi+7G4keFsHnKqX2/gW8RLUfeZWxoTB1v1cr3NnozojkKyLZielJrAcA74NXyTNAM8dm/KXTNfpN9CHK7NEyGtRhmwpYeE/VQw8duPGjSCvxNIKzMUe8AvpIWaPX3QTgaWvnEuPD7BsRDjTYF0TqoSKSd48AaZWlG/uTQzbqfIMH/D5UQpe09eb1Z1kMJyB9tf2bottL0jC0sCE2s9tsAvAzMz3jAD7cR9UQRzh0Is1KJN3tj6x8+YKXchjj66qFWEsPqpcJkzSE8ELdi5oqDQGmESlyzlvvJeBewfERg0+efi8hDxsXSxNkxPI18K5L1Iun+N8sD/h/pLppCJkWRP9i5Dotl1UDaVE80JzFufn0Sfrt6VkEFHYmd6pOTcgmXY2eaNBVFURDFybg/y7+BuV0abSJxULZvWMK09+kwiKpnxuVG+gDf7lzhfGNUNkLwtDiEwgBkpsp9+01FfmOY2Ok3we+MAbqJHiFFn09GqVRwXp8wmQUnHN28D3BSloJSZgfQxoGFKGXn82v+sk5pxqpH7jf9D8TJg7cXMJsaRAEhpb6BkvSzktbRFYP3HO6reJJtOBqfiyQ1K40u+KGXFRJ8ba+3xgtk9wb8rZ5WJgXvqe2T/xKeMqQYqrPP3x3sP9+AE414IGkVoRGw2sIgv3/zqDg7zc+pGYDCkx5MtaqJENO/XWj/LaiybeLyxc/yuzwA1xzfSNOjTADPUi0OFbk6Dn7xk+adTvj3TxlltMUVY0+ZX6pN9EKItNLukDEVFUR98SScCbGJMI=
+    properties :
+     x : 58
+     y : 149
+     width : 75
+     height : 23
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        code : |1-
+         si (SAISCONGE+saisrtt)<>(pnCongés+pnrtt) alors
+         	erreur(ChaîneConstruit(<§$0001§>, (pnCongés+pnrtt)))
+         	RepriseSaisie(SAISCONGE)
+         FIN
+         
+         si Interrupteur1 alors
+         	demande.NbCongés=SAISCONGE
+         	demande.NbRTT=SAISRTT
+         	demande.ValeursForcées=vrai
+         sinon	
+         	demande.ValeursForcées=faux
+         fin
+         
+         ferme("", oui)
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : SAISRTT
+    identifier : 0x22b140c01c11c6c2
+    internal_properties : CAAAAAgAAAD5o3COJDSVAgjKYyQl0MjpVgUkmVrfWxI+AbEIqO3DNm+0wFsbRO5I813rRTKJJHq63t6SqblmH47KieKKOgp62UFRiZbqUJZjvWzS2xH1A629WDyY3MzMeZEW12AVjTC6tJ15xSLGO2NALSj86FmB+sNEHHD2OCQBVv/YzMXQKrFTWWFOFzCtviuz6amR/z8jrEq6uaSNvR9wF4DPUGZrXQjUFW93ybshMBPeC2e8kYCg0X4jr2y42XutJqelJwDKMBQucXd9Bz0nE1YKzV94AJFJ8dILQ5U63i7VkTkjxvaf56zERmvnTjq3CEhg1ZgnApNce9KgsR2qqASEQ8UAxFIwUaDt+txy8rVGn28K5kgIHVYCpDN6D9lmiWU4Nf01z7CGin+mmK7wA8NZSaKVeckJvYogOtrDiwfKDun02p1UP91I1eADYnsYeX0B0SFK0lbtGRNRQxumSPYYYrhUtsd8U/oVvwZkUfYN7vh07pqDX9D/0OUmmQKCsqSktEwTVRirRD4j8jq64nMLHGHadmiw8wBTencQlDhGNuah0zk69PWB4TT8/1gPogTS1O4Fb0Me5eWFPdjVo+1S7g/hnqCS7Dzac/SW0ywoiiC7YG851E8C9agnFBunF9Zn5sYeGj+3DORaQc1KELhqgvJVVIA7WbYUqVC2XciQEQAr8SrcOB8908jo/nbZXIKoB5mU0uD1uNI7D8v5AFqo7byiMrHh+Ct2KH5G9SlAdY3obFPdsyDwq6znhhyiuDdmmF76n2DIgiJRPVNFyQtK9ofk9tHzzlV84lixQ2p7IXWFayLtnJiFI6TXQRRPY7SA9gzl0JecBotiZcBDez06LKv1xRVSs4M+pDVFSs0GSFkfwtJoe+Eckn+d/N4EmS1f4airFb5sc+IUuH5sFMSLwEV6Q2168+ej0h9k+PgNjmLUyB76bTgozlz3rWs3gFalLf70gOPym3IZOOxTFOfJX9aawd5FvIVOyJj6mkwH+dKgfd0pNYG491xhhrTRHZWsHqkYZAdkb0QHDJhsmLOsWmaC7I5Gx8m9JMVU+EP4mdBE1I7cT4NoLhA4RGFbgzQMxN8FoYBHDcUO6kL/lbdG0oDY1R6O461HKId/pFc3EsVmn4ekKKVWkRbz06wx34hxGV6ewoCXK+lXBn57M/ViBKCZ9at2tweN2g==
+    properties :
+     x : 57
+     y : 245
+     width : 275
+     height : 22
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        code : |1+
+         SAISrtt = narrondi(SAISrtt)
+        type : 16
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+  -
+    name : SAISCONGE
+    identifier : 0x22b140c01c12c6c2
+    internal_properties : CAAAAAgAAABCgBm4ERQdIWkpCDyP9iZYjc8KgYNT1YJDguctSBBeCj3PRtGTBX1Xm3bU7PDDnEc5LOlcarQXENy1iYLIgoK/JFvK/yqEFngJlVnuvnAg7nsmkAxgC/wIzUeyc45W0q+OKowdCBvvZ3ah0713YO9kvcfRrMqt+aJWlaN8xQoDv+D5wN3LF8PRDmyT7BUK2FZ/OCB+3kp1OLK6Y1nAG7ItNuhk+Qngaotb+V9GQpWBPSyAauF2rLcrk5K/gTi0Ys42ZBApSsP1gCTH6O7qx7GbqdIJbDxSG9avy6qtghKq6MJIbaK2jKkmf8qYeodjJXpf2YazVDoduKLmBzvRvIKDQTSwFk4n/SVAtIT2Vey6kM++3RofyD57vwiDXhRB76lcietkSHNiON0sQqOnu2NCJLDFsS6BxBuBV2Hb6c02m5GaBMuVadQXpoqoc0P5NwlxLmBqNA23KNN4Sl2ZhIsa2hPjSaNEW4sep1qXaFiwqhvbJssg5M3I7L5W4L9nwcRQMMGhC4DOpfvgncaLj1x7OKnRVQEeUT0yynUWasVmaZ60l7Qr53offOtqjqJmps6uMUkbr6F4sNWgXA5+8UOMjTs81TkxzI1M+wuHX0hVSWoNkEEV5NUE0XnvO7VmjIkizX6wdpPYb96J6t4grwfibs04zoPlgCGeaHldkFAXA/j6lPNnpUoSrultqWNczPzjPPRbEoHn8d/B6wJf3cBWDO/dS7DAhQ3PDhPigsHv3g2f8vZrpJn798uatOqslePlLn4EoJo4D7A7LeWt69NJ0aOLoj4hY3wKeDEGj2rDr6eF+ODb7ABeog7duR0LppW3csX7NkK16XwciwCgER14EZk9L21oNfBVezl7cztx38fmM1yOoRy+0Pp+Ub5SvQMyKKGdiaCKZBIPSZvkJ5tYtCtwdYtaWYHh0AMp1z4CbHKWnDV5quk7guFXREZUDq4OvlQ6W4+pF34ggdDh5w6T6JiKpAQYiN76pytdVpINHYrmimxaPO8Fj4txB/IBLKWgk37LBWBircrN4UHSTnU9jdzkgp7tehrogn1iJgYvcoKn27yrvDv/GewrDKO9WOZxiIwl9weEj1xF6l8lkBl2wieUZEm+b75PhmKoYaLVxmtemTXhTaJNZeBfQ7EN2wNXp8dFu5zhXSaTv2ex1g==
+    properties :
+     x : 57
+     y : 221
+     width : 275
+     height : 22
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        code : |1+
+         SAISCONGE = narrondi(SAISCONGE)
+        type : 16
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+  -
+    name : Interrupteur1
+    identifier : 0x22b140c01c13c6c2
+    internal_properties : CAAAAAgAAACKe3uBjpPePXQ4H+blQ/aLSlow8av887QPJG1Jvqc9Jt+yzpUzHQekT2cSl8n8G7UH9/N3NWrlmxMxkHpxzi/0WbzL+YnptaUKSXzNYhe4TxsJDStKGSeyknxbA6GBXmORhF2oK/AWN47Lc2bNp2ZTBHqTEJDsQHjD2mOStOCyTlSbfDaqf0vpRvBw0PIuMHxmo1rdw3txqZGa/yh838TfQdrYJDNO9PE9aZXdwdlc267Bb8xlPThoh08zoXxD+lbddkYmBtjUR260hDbbVxanDWdK2aqqODIJogkxGmlu6LVHW0vlsGapWZCi7upZwzh2rd8xw+KWv6qloxdCv7kGwIooSTcanEkVB6YpFPvIdu7ftRAGOtfH/JIMJX26LiCzsoQDrcfvrJKpBl/nOuZPXOKmHofNkcphtOKyRzTpkHzM6BndKNu1AFePbOJoMjnAaoJQMQwXeLZdrMT98vH0/wgyv1mtwUDwCLkSmV6tDm+Yxu97S/5QHA5iZtZlhuKvvkUfmuE10lm5l55/jIAqlRFQvX038BMhfZE9n7ot1Y9KhGI6ZPHb3L3r2gLEgcwUhF7ZR+n+Zir5FEy+caFphU0p7vBxExPRVIqardypqb4/be1i1xEK7exSPaJi7PO1tyTYDllKOmJ1AjPHbsA+lJqSsb6osS47iCFTXyRy4F3SsQbs6sjriKYy191zP93b4YvLwacru/DXu/B0JMEBrKinig6PrPQzHZWPLOWtO+4HCcPVPIx2rQuhxpDXdOrVTdiPnI0VwhADOxawXySijGlJqCMPIIJvGS3aJYNcq0O8IesaDycOpIWv+qUNqtxGZmvRC+chv0/LUVeep9czZAHu7iLlM07oKBglZTBfgHkTfz7OTGyxf7VxD6PRMBUlMWQOgHfJQsc9AtDy37uVRLN7O85u4jBUvpFkrTJLJ5PwwL35DCVtYDKx+Mr6ctvD74beejLm/Ujg
+    properties :
+     x : 57
+     y : 199
+     width : 243
+     height : 23
+    options :
+     -
+       internal_properties : CAAAAAgAAACTRYttkFy93kx9TIU8faXJrAoIDqhhSp0O8WsWJkYlQTlTJjbxMY6p0uxcOnX+aP7HMYTzayV3E9N2jNxBoBxmyfyMnV7Kci5Qd+hiU42e8ZILk3DMaZfn5SWmdOIvD1AC5x1yi1RExqzT/6JODJnIyrr3yrFSIr0EhsfTQ3dJDR3+VtZuCWdUfIkBYrASuB/RD/rbHRMV/yBNckfRxPnPE1zQ
+    type : 5
+    controls : []
+    code_elements :
+     type_code : 5
+     p_codes :
+      -
+        code : |1+
+         si Interrupteur1 alors
+         	SAISCONGE..etat=actif
+         	SAISRTT..etat=actif
+         sinon
+         	SAISCONGE = pnCongés
+         	saisrtt = pnrtt
+         	SAISCONGE..etat=AffichageSeulement
+         	SAISRTT..etat=AffichageSeulement
+         fin
+        type : 17
+  -
+    name : Libellé1
+    identifier : 0x22b140c01c0fc6c2
+    internal_properties : CAAAAAgAAAAF/uKneG8kKkONqp7+8i3fOz1qq67RHuJzkrqnr6hybvDMjPQY5PQRVEcoV6QrGA5kyeZILdwsciDapU7o4h8MPdDUpsTSVZTPjVaWKcoreB1GmRMIrZK27WX1z7VooTYnksL1pj0JRSrBkB/jV+NIf+LXiV2Aw33oqJf/DCcyvTZ/ZZzpwjqXsDeLhIe2sKlrrpVMA5y5pfmoGRDC4bLUXYmzCrVKuLyxZa/bkLvFj9/Dtu0Nir+iauqLd648sffmxE42wTAI2+x0QumQXno4+O2OsH6TS/ipEeNs4PIyR3xZBwrcZpjd/w2xsLaOgyYgsvendvVrlfZYSwaMA/fsgg06VgqR4RbVDf2bTQz2rJxn11jiYHeAuQ8PfyM/VgQeLiNtLvXOp+dYPUL6YT4QAQ==
+    properties :
+     x : 52
+     y : 205
+     width : 288
+     height : 70
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : LIB
+    identifier : 0x22b140c01c14c6c2
+    internal_properties : CAAAAAgAAABFJojXwHpVmmzM+A0tZEqnPH5bHIl6UdWwgPtQfUWAxbD4EtlkUsZJ5UA1YEYOXIoRjA2mbTjYEzhc2mTflpyq0nTt/gusHIE0HglsoLM6rOExJY/cjtQSG99/Qc6HpG4iDFHGCaJLe94sij7J+qNjy+mRbAwizWgfqowAHRS55OPzF2fAUuCivpFp3DuzMFGPXCm7q8FmEPq5wth377V3mflVKQGa+EUVyMMMl/nt7CIeAwPq4yTZa7pj8WJtlnlUf4n0Wcgq5kjygSFCLCyso5+B/1b8dioYmOZGA88fh3s5bINyOgWsyIOlt+73iXSH5egRLWizU8OusBZ3hJ1XTZlb6omgwier/6gAMnbrvMLWrtbWWXcziM5adAZnLr+3V1ErKGozgjGgP9hnvF3ff7kfXcqR4CprBLm8+iZ/CJZJErjVlWEsv80EeEExy54DO2/NOrguBqn1geQRKMzRiYp9L+89f6C1BGCqpUnK70J1y2rvs2ZtT47dCJdSULBz7Wmrr8w/zw/prAO381s843bBOOWw3KL7kZzVGXvAH7eljL4fpLQRcru5d5vGGplJ1qfNtsONHOHtFx5SPJoHWieCX6hkTAqCBq/Z6EKhkELwxElWPXheFpQVnd3TCfJP992vXmo1MHtNbyqmUA/NtpNoWEpUAqGezBMNyYNmzdHSoRonQLVAymJN5EhAqg==
+    properties :
+     x : 14
+     y : 277
+     width : 408
+     height : 44
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : LIB_PPERIODE1
+    identifier : 0x22b140c01c0ec6c2
+    internal_properties : CAAAAAgAAADHVLZ5/FTrUyaisTRobwi0a/dK6x/NGJ6igt9ml8l7f/s1F+GJ2WM9lM0IlCoDyQseeaoCNtqPf8JkUFY5JWBbNkWzriWp4saVdzsFXY01XtsVsPmu3TSrulEID4+a4KVF5fh1kSAEbW2kP/h+Qy1APBdU2xcMWw0bPtGdaw5cpSVbHSMGKsTAo8FrQUA3/KgwZP0gDvmFaLhsP4ZUXdL53LPwsJYTaDC1iXofxs6vaqxhaUojaJ1/XKhRwgNksjdGFU2PjSdryVUZDzKIu92phrBPMQOtD709Dk8NuTEmuOFx21Q+RTaRog89NigPapYTYi1AfbVECto41I/odJd/9iQiU6Fnsi12x4Ro7pPf7W6JQlhjf4WJ86XDAXwja0e9ogMrPX7kpoROnJMckHrAV6PUE43ZO9fkJHdqqOSIn4mOXcQ6jlwOassjA7Utd2lOncq9
+    properties :
+     x : 6
+     y : 6
+     width : 427
+     height : 177
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : LIB_INFO
+    identifier : 0x22b140c01c15c6c2
+    internal_properties : CAAAAAgAAABIHzc1aMMf/RoR4gimYyMKRtuo5PsiD+lKjGpo1CSrEF+rndKZo+BMS7qJzF1OP5N1eJ3zu7QMBbRJrIXUyyIeg8UDKj3uWUxobNn2ApjWSYEggAUhTbqGk/41jB8cy4EBmwIYKEBJMLG0KqZeM1AUBg6CWb9jXP/AGgBXBmdLFEXNgGiwFcmCELbHi9RuZBzt8l+iXw09/v410JnkZ0XlC0EY9r11Q3Z+uiuVC7A6fHJN32dGBFTaKzllLljSUCNEno22XZpog8NlWtCT6qGuYAoXQKdXN8ZAMNp3+OPX7RUz7S+rHN6qAO46RBFaTMCEf1wa/h/WlGqWCPk9NPg0L8sP7BDiPJ/YLtTMNsdMolCWWy3moKtEsoFtL+SgPQ0yfAacfk5Wz+uvMJ7VDgQG+R4XhQRKyQTHQF8YI5s1ZOHZHP3noz7+zjOrLRkPfrV9zmVNbYPM3z90vM88+MtEN3lwZ1ZMIO5549j7zzJjPBKl+QJvZeSC3ZQuo/2FD2FK1TsFTPkS52Rh7szQsu4am4sCz+asUrqgy8IfigHrNc8OUih59X9TXThE/ufbi6gHssreoUF1GdmZGb+TSNVvzF0l8jc77Ppp0HHDcavE7g9SZuArut2QpzjjJxIcqqJX1kA5dB1pEWClTMSnG6CQxbmI5HEuM3KuRTHNxp+l3o89HQziT6k1DoYF9CTArb0iCf8IaqgOwQzyer1gn0tVbsS9SQSxxAaYwFcD/HaK/jd5JABjskhA18iK0OyGkMXK8KnE8ZOWNBNyqlWmvulKeB5U+GZe0xlP6PqX0UIRnHA1pfZ7YAbEaAQ9d0VsBF9p0VSdh7Z3q/51OAYVtM1UQeNVKwMDtbFuigzmjvJH7qwAYant/zT4IHY92JaYGocpskRIhN362xfolqOZ+z4fIBcKYlMav4SeOpdP18TeXjB4ZyVsUFEq3YR1554LoXE4sMRyrSo=
+    properties :
+     x : 58
+     y : 14
+     width : 367
+     height : 129
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : LIB_PPERIODE2
+    identifier : 0x22b140c01c0dc6c2
+    internal_properties : CAAAAAgAAADhYVPdYwzhhgXPRot4Kb+1EmhSm4QW5JAx4TCY/Uxoa/7gsJRGMc9n84VF7jPaIr7rB7rGMsrAx+Rsjzyzq5IXn2B/lW2QGHruXUSHPDv+eA6je5v9zF4/cRWJGJ+118+DtIjfIQiJLqrM/7ExCrRHcIyURr8h10bpUqLIruL/5QKzt7UBXNKGn1AhXMfFaQnit/2kzKYpwlRLUzFylzO9J60YDmcBLyMPiRlzSDjJpLVxlorvcDQOoLfgxgeEirvf96yNkYfoKmkgTAJki311KezG2SUvfEK12V5bJ6823LohvBRCZUdqVprMHFTPMhK4jNZKO8NlvwrxEfuK3pOXyWirp2e15TQyCh0mAEUr7bcV274F+RxAGXxMa0SP8Q2Q6sSX7yiJV0B/jXdcLH5wBBf2IlysxHQt+GXvA86eypRhz0nwcsgJj9W5z1KGjUaUUA==
+    properties :
+     x : 6
+     y : 189
+     width : 427
+     height : 139
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+ menu :
+  name : _Menu
+  identifier : 0x22b140c01c18c6c2
+  internal_properties : CAAAAAgAAADAfZ27Q+jJ/MBXHLGCb7PyE2Yqjvuo9mAX2ZN+LLuyQtzms1431znXR0sNCCeLESXZp1gqmo+m2mUhb2ELR2phZ8VOgUSyXddfQyxpxffipvH/iiFuFkCLgpjx1Ah9/9/ndeRpWb0s9Qcjy8oPtW3aMcRtuglgDe5Ch9/jnC/Drp19/hhf+qz96diLw5T0yWlzg33c/E8hhMwUBdSOV69/8iDQGLfTvLoTvV3YkiQ5Dce7dxB2gUx1AVvVTykQMm7G+0haIOV568KMGgPEJluRN2XjgQ11Tb8vVxt6P2g=
+  options : []
+ languages :
+  - fr-FR
+ popup_menus : []
+ message_bar :
+  internal_properties : CAAAAAgAAAAytVrwijgMIWMRyVq1qtMOkQCt8v+0uKmAoRjyMFV4BMYRTXh6VIBo2aUiLtwlxwE8effdJ4+XYweVq6JyG3ZmomOBqyOCS8dsbNigUm60P9YHkoDUBKOIiPbP9tGGITI=
+ actionbar : {}
+ code_elements :
+  internal_properties : CAAAAAgAAACvhiIr8gSQ5loUp83uTso9CuLc4dExenO6nYq0wt6wNhhy8DIKk+8xrI7GMink5ce8SLehbaZBjJVyvy60Arg=
+  type_code : 1
+  p_codes :
+   -
+     code : |1-
+      PROCEDURE FEN_OUINON(psDépart,gsRetour,pnCongés,pnRTT,psAvance)
+      
+      LIB_INFO = ChaîneConstruit(LIB_INFO,psdepart,gsRetour,pnconges+pnrtt,psavance)
+      SAISCONGE = pnCongés
+      saisrtt = pnrtt
+   -
+     code : |1-
+      
+     type : 34
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1-
+      
+     type : 2
+   -
+     code : |1-
+      
+     type : 11
+   -
+     code : |1-
+      
+     type : 12
+   -
+     type : 17
+   -
+     code : |1-
+      
+     type : 13
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+resources :
+ string_res :
+  identifier : 0x3b24dcee4529a522
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+  strings :
+   -
+     text :
+      fr-FR : (SAISCONGE+SAISRTT)
+     index : 0
+   -
+     text :
+      fr-FR : "Le total Congés + RTT doit faire : %1"
+     index : 1
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

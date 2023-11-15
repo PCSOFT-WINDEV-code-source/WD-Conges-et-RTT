@@ -1,0 +1,137 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : CJourFérié
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x1ef477260383bc5b
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  internal_properties : CAAAAAgAAACXbPIB9WhQYrEthg0fmG8i0haFRGxG+VDlWO532ZvQjFzGnfSPrTreVknw6QRJXq98Jb0rb/SPQtGm/kYwAHIfOHi0rRF4vn8=
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      CJourFérié est une classe
+      
+      Fin
+      
+      // Initialisation des 11 jours fériés communs aux départements français et DOM/TOM
+      JourFériéAjoute("0101")          // 1er Janvier
+      JourFériéAjoute(jfLundiDePâques) // Lundi de Pâques
+      JourFériéAjoute("0501")          // 1er Mai
+      JourFériéAjoute("0508")          // 8 Mai
+      JourFériéAjoute(jfJeudiDeLAscension) // Jeudi de l'Ascension
+      JourFériéAjoute(jfLundiDePentecôte) // Lundi de Pentecôte
+      JourFériéAjoute("0714")          // 14 Juillet
+      JourFériéAjoute("0815")          // 15 Août (Assomption)
+      JourFériéAjoute("1101")          // Toussaint
+      JourFériéAjoute("1111")          // 11 Novembre
+      JourFériéAjoute("1225")          // Noël
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 2230538720606731355
+     type_code : 27
+     code : |1+
+      Procédure Constructeur()
+      
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 2230538720606796891
+     type_code : 28
+     code : |1+
+      Procédure Destructeur()
+      
+     type : 655360
+   -
+     name : bFérié
+     procedure_id : 2230538720606862427
+     type_code : 12
+     code : |1+
+      Procédure bFérié(psDate est une date)
+      
+      // Renvoie Vrai si la date passé en paramètre est férié
+      RENVOYER JourFérié(psDate)
+     type : 458752
+   -
+     name : bWeekend
+     procedure_id : 2230538720606927963
+     type_code : 12
+     code : |1+
+      Procédure bWeekend(psDate)
+      // renvoie vrai si le jour passé en paramètre est samedi ou dimanche
+      
+      SI EntierVersJour(psDate) > 5 ALORS
+      	renvoyer vrai
+      sinon
+      	renvoyer faux
+      FIN
+      
+     type : 458752
+   -
+     name : bOuvré
+     procedure_id : 2230538720606993499
+     type_code : 12
+     code : |1-
+      Procédure bOuvré(psDate est une date)
+      
+      renvoyer pas(:bferie(psDate) ou :bWeekend(psDate))
+     type : 458752
+   -
+     name : sProchainJourOuvré
+     internal_properties : CAAAAAgAAAAqA6+gcaD8iOc+P8j/u6/ywZeb0jCE8Sx7rlIsPv7o3L6k+shEV8G9OBy0Fl0UB99yqiGXoq6ZOVfvPKkvhz0=
+     procedure_id : 2230538720607059035
+     type_code : 12
+     code : |1+
+      Procédure sProchainJourOuvré(psDate)
+      // Renvoie le prochain jour ouvrable à partir de la date passée en paramètre
+      
+      sDate est une date
+      sDate = psDate
+      
+      // Jour ouvré suivant
+      sDate..jour++
+      tantque pas :bOuvré(sDate)
+      	// Jour suivant
+      	sDate..jour++
+      FIN
+      
+      renvoyer sDate
+     type : 458752
+   -
+     name : sPrécédentJourOuvré
+     internal_properties : CAAAAAgAAAAO3vcg8p/he2vEEoHw92OeKA64e+AaMZZvSLz3B7rBeH3QsblzW61FhGQIZfq4o3/GrHdE4QpFxzZQPzg5XNBvMI0IfWgihQ==
+     procedure_id : 2230538720607124571
+     type_code : 12
+     code : |1+
+      Procédure sPrécédentJourOuvré(psDate)
+      // Renvoie le précédent jour ouvrable à partir de la date passée en paramètre
+      
+      sDate est une date
+      sDate = psDate
+      
+      // recherche du prochain jour ouvrable
+      sDate..jour--
+      tantque pas :bOuvré(sDate)
+      	sDate..jour--
+      FIN
+      
+      renvoyer sDate
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+resources :
+ string_res :
+  identifier : 0x10fadc050021afbd
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

@@ -1,0 +1,302 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WD Conges et RTT
+ major_version : 28
+ minor_version : 0
+ type : 4097
+ description : Projet WD Conges et RTT
+ subtype : 0
+project :
+ identifier : 0x0
+ internal_properties : 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
+ configurations :
+  -
+    name : WD Conges et RTT
+    internal_properties : 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
+    configuration_id : 4493667743180621130
+    type : 1
+    generation_name : WD Conges et RTT.exe
+    version :
+     major_version : 19
+    icon_filename : .\AVION.ICO
+    language : 1
+ elements :
+  identifier : 0x4acc52630039516a
+  elements :
+   -
+     name : EtatHisto
+     identifier : 0x3d99d92659922cef
+     internal_properties : CAAAAAgAAAAT70tfbNlRCiN4dKE2H3Blo9KqYlvh9CCu4w6WRPyeeoKiKRmiHqoZcKwW4qJeGo52/g==
+     physical_name : .\EtatHisto.wde
+     type : 3
+   -
+     name : FenNbJours
+     identifier : 0x3d99d9286e0c2cef
+     internal_properties : CAAAAAgAAACC+PouncpifdApJfabpTegZgk1VYbX9ShNrqWRXu6uCjbk5d3ty11KoZ0H8bEvyz2Hjw==
+     physical_name : .\FenNbJours.wdw
+     type : 2
+   -
+     name : ReqIntersection
+     identifier : 0x3d99d92945842cef
+     internal_properties : CAAAAAgAAABKwLJWVRIaxZjh7T5TboNshitF1WOfcatOT6vVLHsRN90BrIY1gxWC6VVPqWlnE4VP1w==
+     physical_name : .\ReqIntersection.WDR
+     type : 5
+   -
+     name : FenValidation
+     identifier : 0x3d99d92a497a2cef
+     internal_properties : CAAAAAgAAAApJRF1su/H6M1Gzp/8iNrTOUacDGu/x1jnV9R1UxmFY+0XlK4c5HRjjop0TNQM9OQsNA==
+     physical_name : .\FenValidation.wdw
+     type : 2
+   -
+     name : ProceduresGlobales
+     identifier : 0x3d99d933776c2cef
+     internal_properties : CAAAAAgAAACyiOo+DXoybUDZVQZLKLeYRuetxRRV6rzyjREYz20n+Qs7UlB9ew36EQ33wUG/uy2Xnw==
+     physical_name : .\ProceduresGlobales.wdg
+     type : 7
+   -
+     name : EtatCongesMensuel
+     identifier : 0x3d99d92d7a352cef
+     internal_properties : CAAAAAgAAACa8EJGZSKKlajx/S6jke9gnpG9TXLoUaN2xVpCNtqyBjrwmZklkyWS+SWfGZlXI5V/hw==
+     physical_name : .\EtatCongesMensuel.wde
+     type : 3
+   -
+     name : ImprimeFiche
+     identifier : 0x3d99d92e47c32cef
+     internal_properties : CAAAAAgAAABcOrTg34SsvwabE0AV9AWCMF0PR6okDGmG386hQ+mrZZOfMgDDPcs4U8/JN//xiX9JyQ==
+     physical_name : .\ImprimeFiche.wde
+     type : 3
+   -
+     name : ReqCollaborateursActifs
+     identifier : 0x429c6dfe0001c313
+     internal_properties : CAAAAAgAAABn409TUA0lxu8kIP2SssCt91TC6mT4WYuqIIE3zKvj1Sf59sz2wlZFrGhSrnZqFopy8g==
+     physical_name : .\ReqCollaborateursActifs.WDR
+     type : 5
+   -
+     name : FenCongés
+     identifier : 0x3d99d930744e2cef
+     internal_properties : CAAAAAgAAACf+/erGEXt/kesuHUaK7RxBwZeRpt8DHOgoRVlDCByXlauPWVuSt7NJBCKdj6yTkKKig==
+     physical_name : .\FenCongés.wdw
+     type : 2
+   -
+     name : FenDemandeDeConges
+     identifier : 0x3e689d8e093d7a82
+     internal_properties : CAAAAAgAAAA1ER0BvpuTTBFqYrMg4mpDfV7I6Avok283UXz4mbPjzSuBCiioEJgHYt7YIOAQ6NggIA==
+     physical_name : .\FenDemandeDeConges.wdw
+     type : 2
+   -
+     name : CPlanning
+     identifier : 0x3d99d93413422cef
+     internal_properties : CAAAAAgAAADMSiRwz/S87/YLg9CFSKVqAH1/tzljGvSDC7kBjo2HeU+jLnRTrTuow395R88B+e/ZWQ==
+     physical_name : .\CPlanning.wdc
+     type : 4
+   -
+     name : EtatRTT
+     identifier : 0x3dbfc21f493e9894
+     internal_properties : CAAAAAgAAACimJqOPWpCXXCJBVY7zwtMbm017c60EJdOK/QoQMDcxDyWGwfNK70qQf3n0VGPa12nrw==
+     physical_name : .\EtatRTT.wde
+     type : 3
+   -
+     name : FenContact
+     identifier : 0x3d99d93510352cef
+     internal_properties : CAAAAAgAAAALB3MXlNFZAtsgLPmesygl64qi+lMxMFW2mUJaIBD6Hj7m5d36xlJBqJQO6qom0sYOFg==
+     physical_name : .\FenContact.wdw
+     type : 2
+   -
+     name : FenSuggestion
+     identifier : 0x3d99d936342c2cef
+     internal_properties : CAAAAAgAAAD4ViB8y/C44/oPh9S5T4V6XN+bg1xvOviDwzB5DDDkBAg2t4tPqT+sx3NtS8sF/fPdZQ==
+     physical_name : .\FenSuggestion.wdw
+     type : 2
+   -
+     name : FenGroupe
+     identifier : 0x40bdac07000048e5
+     internal_properties : CAAAAAgAAAAeBHYqmcZuAcQtOervph8I0lfRAaDmtdyK3AmTRatpt3WpxO7p12FOpZEL9b0zz8ELCw==
+     physical_name : .\FenGroupe.wdw
+     type : 2
+   -
+     name : FenHistorique
+     identifier : 0x3d99d93713452cef
+     internal_properties : CAAAAAgAAADmbM7S0Y6mSWyloXJnfwe4mvnRCdagUiTJsPWMVBj8PJxmy1dxT9nGLenTLfXrlwnzcw==
+     physical_name : .\FenHistorique.wdw
+     type : 2
+   -
+     name : ReqSuperpositionDemande
+     identifier : 0x3d99d93802ab2cef
+     internal_properties : CAAAAAgAAACehPaqGUbugUStuWpvaGusmouROYt38odOpzEHgjVnYatrwnBpV+HOJRGLdT2zT0GLiw==
+     physical_name : .\ReqSuperpositionDemande.WDR
+     type : 5
+   -
+     name : FenIdentification
+     identifier : 0x3d99d93905572cef
+     internal_properties : CAAAAAgAAAAIBnAsm8Boc0rfVwRJQwVSvC+7E9ze6DaSjdxEqJSAeESK419/eQ/8FwP9+7s1zcMNFQ==
+     physical_name : .\FenIdentification.wdw
+     type : 2
+   -
+     name : EtatCongés
+     identifier : 0x3dbfc0744dd018f1
+     internal_properties : CAAAAAgAAAAHA2+zcC2Fpo8EgN2ynWCtz1I+JqvxpzGO28Bk5jrQEPQ4u3dWojalzEiyDpZKNqoSEg==
+     physical_name : .\EtatCongés.wde
+     type : 3
+   -
+     name : FenAttente
+     identifier : 0x3d99d93a65eb2cef
+     internal_properties : CAAAAAgAAADLRzPX1JGZQhtgbLneOjz5U8C+Fik3oQyiZqd1BRt7dV+hjiS6BpIBaNTOKurmkgbOVg==
+     physical_name : .\FenAttente.wdw
+     type : 2
+   -
+     name : CJourFérié
+     identifier : 0x3d99d93b38d42cef
+     internal_properties : CAAAAAgAAACa8EJGZSKKlajx/S6joK8Avh91vfBGRtFKqB/Fu0XPwTODCqglkyWS+SWfGZlXI5V/hw==
+     physical_name : .\CJourFérié.wdc
+     type : 4
+   -
+     name : FenCollaborateur
+     identifier : 0x3dbfb9a224837760
+     internal_properties : CAAAAAgAAADRLQkdqtdfENV+dqc0Ii6HIZKcLJOJrNWK3AORZatjVasBiiikHKwbdqIc5Kwk3Mw0PA==
+     physical_name : .\FenCollaborateur.wdw
+     type : 2
+   -
+     name : FenOuiNon
+     identifier : 0x3d99d92f63322cef
+     internal_properties : CAAAAAgAAAAlIQ0RrstjfMFa0oPQPy6PRXAsfHwhdC7vaWe9R8TWMt4CjSW4AIh3ko4I8LAg2MgwMA==
+     physical_name : .\FenOuiNon.wdw
+     type : 2
+   -
+     name : FenCongesAll
+     identifier : 0x3e689dae7d9af37b
+     internal_properties : CAAAAAgAAABNyaX5xrP7JAmSGksICNafBVK4SKl3kEWLfjanzUFV693XtA7AOMAvWsYwiAj4gHBY2A==
+     physical_name : .\FenCongesAll.wdw
+     type : 2
+   -
+     name : TEST_ProceduresGlobales
+     identifier : 0x427a4d2200d84ef2
+     internal_properties : CAAAAAgAAAC6kOImhcJqdUjRXQ5DVB9Irg/17cD+NC2KtAvJB+mrtQ+H5kyFcwXyGQX/+bk3wzWfpw==
+     physical_name : .\TEST_ProceduresGlobales.wxt
+     type : 17
+  other_elements :
+   -
+     physical_name : .\Main.cur
+   -
+     physical_name : .\MainF.cur
+   -
+     physical_name : .\MainD.cur
+   -
+     physical_name : .\Description.rtf
+   -
+     physical_name : .\Description.gif
+  analysis : .\WD Conges et RTT.ana\WD Conges et RTT.wda
+  net_assemblies : []
+  uwp_api : []
+  external_components : []
+  internal_components :
+   -
+     physical_name : .\WDFAA\WDFAA.wci
+ report_and_queries_enabled : false
+ common_generation_directory : true
+ languages :
+  - fr-FR
+ code_elements :
+  internal_properties : CAAAAAgAAABseimUYz4VdXZ8hGsGFqoxLDfDcHkNZdBf0iQg2FQcqmw5VrO2lryVMt3efm9RagPlXJBReauIsX3ZdB8=
+  type_code : 0
+  p_codes :
+   -
+     code : |1-
+      
+      globale
+      	gsCollaborateur est une chaine
+      	gsCollaborateurLogué est une chaine
+      	clJourFérié est un objet CJourFérié
+      	gsAnnéeCongés est une chaîne			// on ne peut pas se baser sur la date système, on gère l'année manuellement
+      	gsAnnéeRTT est une chaîne
+      	gnDroit est un entier
+      locale
+      
+      constante
+      	CST_MATIN = "MATIN"
+      	CST_MIDI = "MIDI"
+      	CST_SOIR = "SOIR"
+      FIN
+      
+      // Répertoire des données
+      sRep est une chaine
+      sRep = frepexe()+ "\Donnees\"
+      fRepCrée(sRep)
+      
+      // HF
+      HGèreREP(faux)
+      hmode(hModeMulti)
+      HSubstRep("?",sRep)
+      si pas HCréationSiInexistant("*","","","",hOuvertureDifférée) alors
+      	FinProgramme(<§@00000000000000000000§>,herreurinfo())
+      FIN
+      
+      // Annule une éventuelle transaction interrompue
+      si HTransactionInterrompue() alors
+      	info(<§@00000000000000000000§>)
+      	HTransactionAnnule()
+      fin
+      
+      // Dernière année de congés saisie
+      HLitDernier(ANNEE,Année)
+      SI HEnDehors() ALORS 
+      	CreationSiVide()
+      	HLitDernier(ANNEE,Année)
+      FIN
+      
+      // Année des derniers congés et RTT saisis
+      gsAnnéeCongés = ANNEE.Année
+      gsAnnéertt = ANNEE.Année
+      // à partir du mois de juin l'année des congés change
+      SI 5<=ANNEE.DernierMois<12 ALORS 
+      	gsAnnéertt = Val(ANNEE.Année)-1
+      FIN
+      
+      // Nom et MDP de l'utilisateur en ligne de commande	
+      sCol est une chaine
+      sMDP est une chaine
+      sCol = SansEspace(lignecommande("LOGIN"))
+      sMDP = SansEspace(lignecommande("PSW"))
+      
+      // s'il y a des valeurs en ligne de commande
+      si sCol<>"" alors
+      	HLitRecherchePremier(COLLABORATEUR,Pseudo,sCol)
+      	si htrouve() alors
+      		si COLLABORATEUR.MotDePasse~=sMDP alors
+      			gscollaborateur = COLLABORATEUR.Pseudo
+      			gnDroit = COLLABORATEUR.Droit
+      			ouvre(FenDemandeDeCongés)
+      			FinProgramme()
+      		FIN
+      	fin		
+      fin		
+     type : 196608
+   -
+     type : 196621
+   -
+     type : 196627
+     enabled : false
+  orphans :
+   -
+     name : WD Conges et RTT
+     identifier : 0x4acc526300535226
+     code_elements :
+      type_code : 159
+      p_codes : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+rad :
+ internal_properties : CAAAAAgAAABhIL0UXeZmxDJxY3Xy0Q==
+project_explorer :
+ explorer_type : project
+resources :
+ string_res :
+  identifier : 0x0
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+  strings :
+   -
+     text :
+      fr-FR : Une transaction a été interrompue. La dernière opération ne sera pas prise en compte.
+     index : 0
+custom_note :
+ internal_properties : CAAAAAgAAAAd98VSJfHHqE3P0QHwrwdhn7ig8dWBR6valpUTgnAMTVXiDg==

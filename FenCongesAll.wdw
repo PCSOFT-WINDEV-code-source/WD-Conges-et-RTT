@@ -1,0 +1,350 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : FenCongesAll
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : FenCongesAll
+ identifier : 0x3e689dac04f7f33d
+ internal_properties : CAAAAAgAAADJ7awydQ/fKSS4nFUnEedNGEDK9g2nIUt7tQBhfqQnzKkM1P9JYggiDZUeRJhlObpA4F1Mi0GT/YbMds5kM0Jy+GVJ/R3hVWf/+ScLigr0uWNMtXFHMcrGAxXS6naf3l1njJ3bej02vEZDHp09rt1AOxryDr4XXW2DbFI3DfSRd0idGlAdmM5me0UxxvcaR32YnawGqqo7K2EZx4EnaZzfmgPpZ5/2gRacGGKdfS9EjIIN14skcqohAlrxF5ZSGHJp4qf0DlDO1OzDMkR6R9T+qi47wEcO9jtzma+krQ0KTfK8nYCgQ3oJOy1v1e7L7nMTipBV+SDKtYgQuU49iRC54CgHVS+m0VXYE036lQxtI0hby4Lh4dg4capOEtQ4OpzMP4DBGWlsB3Wdia3iir05W0Va27cBt6rDwhLDt2Z0UQiXc+lwnVF1bqBIyDK3CiGILEjfamH1+wfxs8cSMwOYTGWnPwEfBnBk6FBtmGSKyh0GKPR4NdwJkPcajLnY9p3j+F2RkzgeBb2FubYUokw8vHTRzlTjsv+XbpQLp8W/jKTNTbrEAz7CoR92H8r18OmPtcP4Dbfo5FM19dAv8L02KZrkmKcoMBai1k4RvYDcqGHGeNQpwOQofkoI/futqIdTXO/BMC+Zk3vQRV3JWqVYE1hc/eUetTKdoV0fPYZH3Gy0wqu1xXv5PGaeCudubuQd4HDNgxB3v3UYDqjn2VyxycLvBkIxq04zUYNwvVeAK9T2Xl2bvJQsCyHUvzbpI7KDs0brQm7Fmw7fq/JicxqurpkYhtJFe0n4lhemMcaNXlgXU90mxwX2YaegDuCDzaCjvkI=
+ properties :
+  width : 794
+  height : 603
+  widthClient : 792
+  heightClient : 571
+ controls :
+  -
+    name : Image1
+    identifier : 0x3e689dac24faf33d
+    internal_properties : CAAAAAgAAADQtffF6eklgRVfQeJgkZ5pjW0f6PulvtECOXon+lMsxnkrKNSGaJzrfoRH+UmAwmTI5b6nyc+EDvI86tk3a0klkNicxVzN2BYio8BMIpf78tKXW9MLF3pjsZvR5UcoGzYawRaf4pMRlcKp1IoVjXcJqBMkoJFgnZnhdfXcBt5k0shtFEZu5I+/RGyyvC6GQzVlRp9IOV2AZPT3nIw4I+vtxq0K1XIbMMtys4CXyyFEtX00u2+Lpj3z1WJeU08yKgU0oQSKiiOU6EM0O2TxeYs9Vc7Zz2FuLHmZLQpZbTqgLW9MMDamyTGBA6J0c3CEyu4fuQFg189VVOuE9JSJ0t5xtCMVbp+BcrFJJ2HH/b3/k82pkM3htUcTbi0J5DYrmNgzf8TB8GNnFhbWBWIjutYohuCZPni7l78oOB3caFSXVOIDVpQlmtiJm2f+LPGlA6LMc23vgIEDPJmtu6j0/ByKYuV0LE9XgtucYg6EY6oUJ/LMqfZaI/AJC87mxfw3+8Hw3oErt5YTj+5bGMf2OXH02m4z5vphUneH0EyCpkaqIFj/MHw16bEIj/9F4DnKhK+HVewAeKsFj53AFvq6R5PbKuvS37/HzM23ZQ0liDifhDTEu7hjixY/LpvSaNpZm4HvjnjiVS5xcY9F+skLxZfqLvbjzzBkRD9yyEWh3Awx7AAGqkYH+TZIzSuf24/aTAjLZgU6Un7xEfLygRZsdpUinJf+2W3RV4swko87lBLhBGq+juJ3p8XozPnGkfrY64tdjXKLH+aQjWla04Ih624gQ4g1/AOGC0hBfhcDndUf
+    properties :
+     x : 6
+     y : 6
+     width : 754
+     height : 503
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        code : |1-
+         
+        type : 18
+      -
+        type : 66052
+  -
+    name : Ascenseur1
+    identifier : 0x3e689dac53e2f34c
+    internal_properties : CAAAAAgAAACj03kCql6pG2W20qKV2jeZvsLD86mIqHk5/+NIBkwHQtekSgVVEDTKPezV3QYBgYyeFidFQbjFRqCIHau+Vjk65phczz2QA0AiDy3IJXxAIlpozxwUmJEOfBVS0pKtw8ur087fSWVhe9ghqVubvLG0I0aGzBrEvF9L6TvUsQug0y6ZqJfxFX4r/EoC3yIuEZ9W5LYu2DMkmtEi/IQ9LHnA/RcEJmdQBfm8xvoKGq9ag9yAWDJAkchMBk3cwhEyTh0TcekYQswHmUAgjJH3NkJDALvbvG39V9FgtGa/Fst5TbS842knx3Tp8jDsROf/lRWl4qtQqM0xE+OR0atEsnJMY1VrVmaxNPy9CiA3TW3cBmANK+3p1Q8jMbzv5bV7GOT+rUBl3JNDRWIsmQSBGOs0qdRK1UG2oq14YeTMXBI/xGBiMyZ3fhYkOMNPgYMMYYp77U5ka2bCWH9PRdDXPTSSLYnFZTjsvjCTf8/qvj7N+tRbnk7VScCIEgF+aRxVblyLTk2cx2H9u4kupZR6HfbMn/g2Kch3yJgzFcInyNd8heXBzdjrMDw5VwXCGi+PEh9P2XbltJ0o3n01Jrfc6GOZC+l4LlN08MgwUZif/iBnpE/GeWW+n+FKntCAcwdGu8ua+ieF96SrC70esSkfwRPZBXmnSCeyjkSM8dcXRLwDYcEA2h5nekVT92pdwtnng2TkdB4Mpn4zYnGL8Src++SBRBpCK5ROUGtZ7Ua62y7Z0kBW8oypswObVQwn3BZjSj9w1z1Ii8B74Ys=
+    properties :
+     x : 6
+     y : 515
+     width : 780
+     height : 20
+    type : 18
+    code_elements :
+     type_code : 19
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        code : |1-
+         
+        type : 29
+      -
+        code : |1-
+         // Réinitialise le planning sur la période demandée
+         clPlanning:InitialisePeriode(EntierVersDate(Ascenseur1))
+         
+         AfficheCongésAll()
+         
+         // Affichage
+         clPlanning:TracePlanning()
+        type : 17
+  -
+    name : AscenseurV
+    identifier : 0x3e689dac0d75f34c
+    internal_properties : CAAAAAgAAAB6bVlEy69OiU3Z/kZ2oi/Yh9I2JcfsZHOo9CF/cAoqEJOEMbRa2hsnn7kM1y4yZZJPX2JPj85tbRhwLuKi7h884td0qIR9PZk3iP8UwqltcPmS85Ll5SZkM1QegOkQSdlXmI4t0l4D7a5VCkWN40pCeH+mOX6T9l4ZuP3fiE4heAmo1xZUTYZcGkU4XP5b+qb0dC5o1HYzemLa+x/DGlHSMQXT0GhaZn77qRFhv2IYfwXIWD4Lr7cKQqUpOKxTCnguVeYgxwuPunZGMvxY383/1ejcpjnsoFNu8qsH4LF0lhiUiOQfU/GS3f54ZWeQCl8DhQBT8sQfxEBpV6q1Io6/TvKwmHrzZ4MgCnqP7jsAUZLXIwWAyMgZYRgT7V5aYc9eCskedZtkRQ/3W5cyaaX6gpiZqiiyVZ2EYtfw1a6EXbztbgXKtLtPvSuCi2BN4hMXzINJLFKjaQJsF7UKgsVONkZv2pGKQ4DnuJDB72JBEHfsg9vJs+Qr65srlI2J7RufhWfRNg12/otnhvrmgCYHUXIcbbJRQ2cEAgxBoTNzrLYRo+aN/4n5kJxVeemOFojJoWIBrk045dsfwMbhQtsSeMTkcqPfoKokdgp0sT9BlXEI38WtIo+pvmrw2GakOkb0rzifJsCA/9YBSEcpMJiqiOx8Q7HipyinFGbn4nnVjeKpobcMKEo5SlNiFIH8+ZYphWsVg3IU/CLy9OwcYFaP8zS+zUIMDHL6GtcS4zt7L4x0n01OzfRsraQjgb4KsvkliRt+m8ZB
+    properties :
+     x : 766
+     y : 6
+     width : 20
+     height : 503
+    type : 18
+    code_elements :
+     type_code : 19
+     p_codes :
+      -
+        code : |1+
+         // Affichage
+         clPlanning:TracePlanning(vrai)
+        type : 17
+  -
+    name : BULLE
+    identifier : 0x3e689dac2e0cf34c
+    internal_properties : CAAAAAgAAAAKoUdvMMLh+dE/ff9N5x9VEpYW14p8ISzihSND6OpHUX5av//FuOkFS2VcdXTDUf6FFow2wAf62JfcCRRonizKI8eMnBjGs5++ypf/H70LqmPYZx7xdVqxDyzZm6TlDRIYODzqboxZHCwp1KsDSZU6yFQH11gLnhtvrh6TnHkcl0tjo5L2mencgFTehIcMrkiWSdEpqapU7oI26Xv3ZkZq93QyYfdUDGSs3SU1UVnkcto58zkmNwNxPPl/mSUUnPBrY/ZJWRqcstvTdwNW4WRqBdzoyCePpr7+5kEQ/D4HxFHX5UveGA3/EtmMv8AwSX48IDI1gmP6Gf7yIjISk/N0CzpsnVy1fskM0xSgExW6pJAdbA9j94ji/nP0QhQPcj3hwKzZTNA11cOH7AIGuSJd7FU2CjFt644eiyOa0UsBzqe7xRa9K/AixqcCKlBwUxWxv2/XV8jH+fJe
+    properties :
+     x : 6
+     y : -44
+     width : 100
+     height : 13
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes :
+      -
+        code : |1+
+         moimeme=""
+        type : 14
+  -
+    name : Fermer
+    identifier : 0x3e689dac43c5f35c
+    internal_properties : CAAAAAgAAAChRoe72pW71tSqx1oQndB9HJp6jGHiM1IDko00u6MeEQyhXofg8hOw9TKMEpFIdNg9zUt1kK1JyuJpLK+dW+c9kQMpfADJyjHTJTus32qnp9TxPdFCuT6PqAz/Hmga63zUqcjq42MK0HBnFQBR+rHEkOmsLcLuQr9UcnNppfAg36lUXt5uBIYFDqSJ2tdpr6nz4ZxRAl29H+oX1R47Pqc9znZu8JRFtWKPUlDt0sJ13GaIb1G1YXaZsxfOIX/sxqgDYd+VFOTSzrKuMHoB2LOxECctX5DZn+ZOSSKjWpyHZPua7flrFn7/R6AJ32klsgs+pYUucWmEEwYgV8qBDeqyHjnHHiHW78coy39sRmajYJRHxJX9rpsCTBsJ2ycolYecZDKbfWRkhCTEK5IaqIH9uCoL2/u6msziNnkyo9ZjUdSwZyzUwUJllfxyONC2PkzQ846lEAf8tFJJtDNTUMtDxqkBpjzjTxW1zSibREakNYix15V9OcI452Anv2hRX2SbQMmG7ay6OrlQCDceZnQae4UBl6z06a/lkNDD1OAxZTaA9kTjsynlvpvJjfrxNhN/+2Q0hg8CyP79h+4gXBjiuTFl6lzGuf3B+sOLrzc4FazGB2KdaqsGZOSGR8kjwV/XcgpTBoMQy99fNEGzGpVdhJarCyt5dF7HW4vPk0XSHKwRp3F85dyoV7SeOXggRdet7jCTBfsOtBo2LOIsv4GYuHwckDyoi3BstMZgjvPcNtaSW0VmMYcBBO5ZYVocceYh8n/QNTCf3XM61KA0DIuYQYJUU7Bco/MujS7losYXk1KdSg6Tn2kWvoc4rqgmXz8KwESgM19UfCX05LCs4CPRFh3QGYAApl/AAxXi6A1w8hDUesSwH1HF1mg96DJ3H49V/gqwpHAulzxSS1CDV/EUUuHbyeq9uaVWiU1Bk9SpSsl7TGwU4A3Gs6GrCZLuGxrQ1DADYCE05GPL
+    properties :
+     x : 711
+     y : 541
+     width : 75
+     height : 23
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         ferme()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : non_validé1
+    identifier : 0x3e689dac78eaf35c
+    internal_properties : CAAAAAgAAAA620OzDEbJdNmxAgJLMB4EotYqnlJ/xD6s0OvzrC1YYDqW5Wjub+bEVuuZhQzykbiRYjGrCp8HX7KfBJPAUPJfLpFR9ZSXWa1In95u/DUAz8FIJd6XsJlCLUwD/A4aVLvXvzdjePQWsdxdjpEmNz1LLnED3gGhHeElMymAJKRmrDPrS3SYnhQn9QGErFrVdTDtnKLSFsUmKlC6HeDQOYy8aeES7/TBMi0jCUCCWhUktKkuQ3zJ2sm7GdAgjPGIytQtyOqjs1hql5yHfH1uZ2utn6kSzBHS4NcCHOIzdkJtV1UUfnaBzoeP2B6PtLG9veg81JIMRWlQb2nL/y7ucoWPqSEsNYNZvG1KQyscPEMjtVs54mp5FINiItGfbDXHr6vvVnG2xWQpT+2v8mCdZ5G1iC40N44Zoncq7+fRcqfZASFgmcc97ulDqMCR2P1yDbJNbhPdpVwsQPm9gLCpDg==
+    properties :
+     x : 182
+     y : 542
+     width : 32
+     height : 14
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : Libellé5
+    identifier : 0x3e689dac7b10f35c
+    internal_properties : CAAAAAgAAABNkuYabXbF571Ex1B1O+1Ek7qo9vWJ9z3BzrAU5HhlAHF2YtrVpxhGnAxOlak4Hntqx14n2qLpE8Wux5dQlF6m0mBNTNaT13ip6Jj8RPdOeivqyRaDFbSAg9XTzMRd3QB2PHxk1ZZI9SN4cpW8yYJOb9RWEmHNxuO9A4u0ozRBE6s+Q1lV8baMTRLVnupoTPU/XgHOc0GzCJOvoNYCpuHZNhkw8wVVUVMRYQubq5oeHRNUG2Jwb0WZv9jVcoFSi/+05IJSx2dVxQiAf2FP7YaWAiGbHeJExPpgMTcYC4p9THU0GT+nXcPJfXuR2MjLrCS+RU0kMOHo93+pK7CGSl0BmkUOdUXlrih91BQnE+3vcAGG3hawDJh7K5II17aEYz+JrVTKa4V278U=
+    properties :
+     x : 6
+     y : 541
+     width : 15
+     height : 15
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : non_validé
+    identifier : 0x3e689dac0cd1f36c
+    internal_properties : CAAAAAgAAABqJRIWNKvsYmeaXchZBv49l73vdl71EP8Ha70UN6+dmkiAVkujI5FS6qrQs0uftWfsxd++Nz3cYxVj57gRUxv8U1g9Qq758GNrmPEkgWBH1IbVghOlsC09lDPdagLIUxrXZcGqKiWRSiz49rVby2s7AHojlizdYjK+e2NKkm0ePnIK1iWLOix7AbainiXm4zjXZ/YBPbSBT82ZpaOJ9+exm7ijm0giMFMS2tU8gWmBAKzfkQtq3G35/kUhGjDgLziWMpBzOYVxujx8RqvbgYju28BxxIqXmbjW/LY70BzQ3uFgQW0dQuRJ87Xu2szAVnpO9I6+uFNIIZYy6DBsGpBb13kCesbtXG0hhojpgMb95OnIjOi9zZlWgza0NeONCXHnNAzpG+KSo6ce+tdDhH+yaIV0wDdEqXPql+wFmdFNqA73ATMuFH5EwExIBq2KRu6vKAdn/CXSc6fn14unox7aj6nr6FDFsQw9HB2TGV+V
+    properties :
+     x : 24
+     y : 542
+     width : 134
+     height : 14
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : Libellé6
+    identifier : 0x3e689dac37a6f36c
+    internal_properties : CAAAAAgAAACIuOOuiS1/fo2pk3FyLbw/re8Dz9S33/8/2dmpdiuDrQWP4Y9HElrEW+6ANYA2bBn/yZACLbUmiVC9uwDdq7VluwbkhRid+7LKWBBX3lkDfB9qY7QdvXqvtKGgs/GbzbdfEWzYWlmCBuJfU74q+fsRbvlAMcPglv78FanaoqDZt4rrgMpNboGeDOupnBrB82dz031IQ0YnniAa0FsudgPMRz46bOUBH9XI8nSxh7oOeFVZBLX8xJ0cHdd9JIv927SQ9i++BYSitnTUeB0wIltoYx4EA6+nTTP6OH5JVQXbV0nR/qJ2QTLdMI3DjCedJ9/5drM3fR97nv6XwBa6VCDE8VXSzqCbVFbqjTBimXIT5VzBtB/bi5yn4IoZ9krLBL78pkO3qu4WYgoi
+    properties :
+     x : 164
+     y : 541
+     width : 15
+     height : 15
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : Libellé7
+    identifier : 0x3e689dac5ccdf36c
+    internal_properties : CAAAAAgAAAD73/hTWtrb7log0FnmuEJ4tQKIoRLuCRZ8Yn6HoyNw+eT5haeX7c+9R67I7jsALSFzwqQ07GHql4Z6E8r3zz9Rg9OextC0wOALWRfxJImi5hGToKlzS2NmsHmZlPvAjX6cEeuH3r6Zc1g2p82hZfshrHuNrOQl3XWpBmEknIppBONdsoI66tqOKEqIdElPogslys6ldFuFscmbQE38d/AIUmJs6ClURX43qQLV0RufULwPh0OkryPvXvTTPPn0gsIRTLCsgZkkeYnhwGt0uzBijCYtQRv+R0qvoTCBOd33Ce9nQ9kLkppW+GNO84Dk31bKdDHBsfS5eng1LPBHKB9Hct1i5E/XvVnNFeGgDEWsxztQLgmAtnaQd0VdoDBUYZbxYAjk6AEQqx+P1rbe
+    properties :
+     x : 240
+     y : 541
+     width : 15
+     height : 15
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : non_validé2
+    identifier : 0x3e689dac3dd3f35c
+    internal_properties : CAAAAAgAAACfNEJ3bekWOMb+XfvGJhobKkjkBGhGGphD53vmbKuebB89UmK86ox/8J0P0efWwiimQWxCdpI//t5QR+NG6iHmjV50wVQwbb2gvfwXkSAkLhlsErPQ+ZkKfC5r55xag061fTEjB2dN/PeVcYU/hJnu05QYlGt1Iuc5URmbcKS1ir4yqmr6BM5DZYx2sg15QUxF10drplIXR5dcoxcX7K/FSdnptijgJCeAY5ZrWcjuNZq+zTRhRq849Gq5IUvpRjOIh3LRkJVKQ34xDAaybk/NzVuRhEcBRqU2v2gyoz2/C937TaGazJMuDZxIWVcJCa+q4+xQIaFjPmzlnJPjj2+Wqfgiyl9lqVRVXVy8n9OUS0EDph7EJww5NWXkpgBoukZhxQ73mOytDiPgnGwXhXuWbXSrsrSAjtCCjIiATjHORawcVsAOmtA9sc5z7YVvsQCrT+oO4sfnal0YGW0K9jBRcX7xKaCwlpc=
+    properties :
+     x : 258
+     y : 542
+     width : 98
+     height : 14
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+ menu :
+  name : _Menu
+  identifier : 0x3e689dac6a95f37b
+  internal_properties : CAAAAAgAAADAfZ27Q+jJ/MBXHLGCb7PyE2Yqjvuo9mAX2ZN+LLuyQtzms1431znXR0sNCCeLESXZp1gqmo+m2mUhb2ELR2phZ8VOgUSyXddfQyxpxffipvH/iiFuFkCLgpjx1Ah9/9/ndeRpWb0s9Qcjy8oPtW3aMcRtuglgDe5Ch9/jnC/Drp19/hhf+qz96diLw5T0yWlzg33c/E8hhMwUBdSOV69/8iDQGLfTvLoTvV3YkiQ5Dce7dxB2gUx1AVvVTykQMm7G+0haIOV568KMGgPEJluRN2XjgQ11Tb8vVxt6P2g=
+  options : []
+ languages :
+  - fr-FR
+ popup_menus : []
+ message_bar :
+  internal_properties : CAAAAAgAAACkx7xKrFryA0Hza3yPgJVQC5IXZEneptOmS0IEsjv0gRthLaiq1CD4yaUSLgx1x/FEka9Vj1c/i78dU+o6M46bEs0LERnEaeVubor26PgiqaBJbKayZgFmqqhxFDcgj5w=
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1+
+      clPlanning est un objet CPlanning(MaFenêtre..Nom,"IMAGE1","BULLE","ASCENSEURV")	// Classe de gestion du planning
+   -
+     code : |1-
+      ddate est une date
+      ddate-=15
+      // Initialise le planning
+      clPlanning:InitialisePeriode(ddate)
+      
+      // Affichage des congés actuels
+      AfficheCongésAll()
+      
+      // Affichage
+      clPlanning:TracePlanning()
+      
+      // Bornes de l'ascenseur
+      Ascenseur1..BorneMin=clPlanning:DateDebut
+      Ascenseur1..BorneMax=Ascenseur1..BorneMin+365-clPlanning:NombreColonnes-Val(EntierVersDate(Ascenseur1..BorneMin)[[7 A 8]])
+      Ascenseur1..AvanceRapide=30
+      Ascenseur1 =clPlanning:DateDebut
+     type : 34
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     type : 11
+   -
+     type : 12
+   -
+     type : 17
+   -
+     internal_properties : CAAAAAgAAADIN/yAITWO6CMuc9aS58Svq5gJdSxVLBaBm78jPbc2l8/ovPmdRYcPbjrLUcUCd2RneAcnuxnp4ON8fimDHEevRI/2I9aKZ/xZNS6cuQydMaphYLlBiflH28m76mB7YsWeRVfLcsl8E/gROQ==
+     code : |1+
+      clPlanning:TracePlanning()
+      // la fenêtre se redimmensionne, le planning aussi donc la borne max de l'ascenseur change
+      Ascenseur1..BorneMax=Ascenseur1..BorneMin+365-clPlanning:NombreColonnes-Val(EntierVersDate(Ascenseur1..BorneMin)[[7 A 8]])
+     type : 13
+  procedures :
+   -
+     name : AfficheCongésAll
+     procedure_id : 4497017591567217469
+     type_code : 14
+     code : |1+
+      Procédure AfficheCongésAll()
+      // Affichage des demandes de congés de tout le monde
+      
+      bMidiD, bMidiF sont des booléens
+      nCouleur est un entier
+      i est un entier
+      
+      // on efface tout
+      clPlanning:PlageSupprimeTout()
+      
+      // affichage des collaborateurs
+      HLitPremier(GROUPE,Ordre)
+      TANTQUE PAS HEnDehors()
+      	
+      	// Collaborateur du groupe
+      	HFiltre(COLLABORATEUR,Numéro,Caract(0),Caract(255),"COLLABORATEUR.IDGROUPE="+GROUPE.IDGROUPE)
+      	
+      	// parcours des collaborateurs du groupe
+      	HLitPremier(COLLABORATEUR,Numéro)
+      	TANTQUE PAS HEnDehors()
+      		
+      		// Ajout d'une ligne au planning par collaborateur
+      		clPlanning:AjouteItem(COLLABORATEUR.Pseudo,1, chaineconstruit(<§$0000§>, COLLABORATEUR.Pseudo))
+      		i++
+      		
+      		// Demande de congés de ce collaborateur
+      		HFiltre(DEMANDE, InitialesDateFin, [COLLABORATEUR.Pseudo+Caract(0),entierversdate(clPlanning:DateDebut)], [COLLABORATEUR.Pseudo+Caract(0),Caract(255)])
+      		// Parcours des demandes
+      		HLitPremier(DEMANDE,InitialesDateFin)
+      		TANTQUE PAS HEnDehors()
+      							
+      			SI DEMANDE.HeureDébut~=CST_MIDI ALORS 
+      				bMidiD = Vrai
+      			SINON
+      				bMidiD = Faux
+      			FIN
+      		
+      			SI DEMANDE.HeureFin~=CST_MIDI ALORS 
+      				bMidiF = Vrai
+      			SINON
+      				bMidiF = Faux
+      			FIN
+      		
+      			nCouleur = iBlanc
+      			SI DEMANDE.ValidéDirection ALORS
+      				nCouleur= RVB(238,232,115)
+      			FIN
+      			SI DEMANDE.Comptabilisé1 ALORS
+      				nCouleur= RVB(158, 252, 114)
+      			FIN
+      		
+      			// Ajout des congés
+      			AjoutePlage(i, DEMANDE.DateDébut, bMidiD, DEMANDE.Datefin, bMidiF, 0, DEMANDE.Observation, nCouleur)
+      		
+      			HLitSuivant(DEMANDE,InitialesDateFin)
+      		FIN
+      	
+      	HDésactiveFiltre(DEMANDE)
+      	HLitSuivant(COLLABORATEUR,Numéro)
+      	fin
+      
+      	// Ajout d'une ligne vide
+      	clPlanning:AjouteItem("",1,"")
+      	i++
+      
+      	HLitSuivant(GROUPE,ordre)
+      fin
+      
+      HDésactiveFiltre(COLLABORATEUR)
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+resources :
+ string_res :
+  identifier : 0x3e689dac1526f37b
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+  strings :
+   -
+     text :
+      fr-FR : Congés de %1
+     index : 0
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe
